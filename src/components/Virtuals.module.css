@@ -1,0 +1,50 @@
+.section-virtual {
+  padding: 1.8rem 0 9.6rem 0;
+}
+
+.virtual-container {
+  width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  /* margin: 7rem auto 0 auto; */
+}
+
+.virtual-content-img-box {
+  width: 40rem;
+  height: 24rem;
+}
+
+.virtual-content-img {
+  width: inherit;
+  height: inherit;
+}
+
+.virtual-content-text-box {
+  position: relative;
+  height: 25rem;
+  color: #fff;
+  background-color: #000;
+  padding: 16px;
+}
+
+.virtual_logo_sm_container {
+  display: flex;
+  position: absolute;
+  top: 15rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/* media query from 1270 */
+@media (max-width: 79em) {
+  .virtual-container {
+    width: 120rem;
+  }
+}
+
+/* media query from 1200 */
+@media (max-width: 76em) {
+  .virtual-container {
+    width: 105rem;
+  }
+}

@@ -1,0 +1,169 @@
+@import "normalize.css";
+@import "@blueprintjs/core/lib/css/blueprint.css";
+@import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
+  background-color: #edf0f4;
+
+  overflow-x: hidden;
+}
+
+/************************************/
+/* REUSABLE COMPONENTS */
+/***********************************/
+
+.container {
+  width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.btn,
+.btn-sm {
+  display: inline-block;
+  color: #000;
+
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primaryBtn {
+  margin: 20px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 13px 25px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background: #185adb;
+  transition: all 0.25s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
+}
+
+.content {
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 4.2rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 4.2rem;
+}
+
+.paragraph-primary {
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+
+.paragraph-blk {
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  /* padding: 2rem 2.2rem 1.4rem 2.2rem; */
+  letter-spacing: 0.5px;
+}
+
+.logo_sm_container {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.logo_sm {
+  width: auto;
+  height: 3rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mg-t-3 {
+  margin-top: 3rem;
+}
+
+.span-logo-text {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  background: linear-gradient(to right bottom, #37b44a, #374eb4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.span-label {
+  display: inline-block;
+  border: 1.4px solid #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 7px 11px;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+.ck-editor__editable_inline {
+  height: 280px;
+}
+.markXIcon {
+  position: relative;
+  left: 88rem;
+  cursor: pointer;
+}

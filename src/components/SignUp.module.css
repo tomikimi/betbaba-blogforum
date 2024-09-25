@@ -1,0 +1,95 @@
+.modalButtonActions {
+  /* border-top: 1px solid rgba(0, 0, 0, 0.075); */
+  padding: 1.5rem 0rem;
+  width: 100%;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.inputContainer:last-child {
+  margin-bottom: 4rem;
+}
+
+.horizontalControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formLink:link {
+  cursor: pointer;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
+.formLabel {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  word-spacing: 2px;
+  color: rgb(45, 55, 72);
+  padding: 1rem 0rem;
+}
+
+.reqField {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 2rem;
+  text-transform: uppercase;
+  color: #aa1414;
+}
+
+.formInput {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.registerBtn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  border: none;
+  color: #fff;
+  background: rgba(23, 126, 201);
+  transition: all 0.25s ease;
+}
+
+.registerBtn:hover {
+  box-shadow: 0 10px 20px -10px rgba(23, 126, 201, 0.6);
+  transform: translateY(-5px);
+  background: rgba(23, 126, 201);
+}
+
+.cancelBtn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  border: none;
+  color: #2c3e50;
+  background: #fcfcfc;
+  transition: all 0.25s ease;
+}
+
+.cancelBtn:hover {
+  box-shadow: none;
+  transform: none;
+  background: whitesmoke;
+}

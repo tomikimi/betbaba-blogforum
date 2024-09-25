@@ -1,0 +1,12 @@
+.loader-container {
+  text-align: center;
+  width: 95%;
+  margin: 5rem auto;
+  padding: 10rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.loader-text {
+  margin: 1rem 0rem;
+}

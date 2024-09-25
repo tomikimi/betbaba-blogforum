@@ -1,0 +1,98 @@
+.emailSettings {
+  width: 130rem;
+  margin: 3rem auto;
+}
+
+.emailSettings-actions {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.075);
+}
+
+.emailSettings-header-container {
+  padding: 2.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom: 1rem;
+}
+
+.emailSettings-header {
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: rgba(45, 54, 59);
+}
+
+.emailSettings-sub-container {
+  padding: 1.5rem 1.8rem;
+}
+
+.emailSettings-list-content {
+  list-style: disc;
+  margin: 0 0 0 24px;
+  padding: 0 0 1.2rem 0;
+}
+
+.emailSettings-list {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #353c41;
+}
+
+.formController {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.formLabel {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  word-spacing: 2px;
+  color: rgb(45, 55, 72);
+  padding: 1rem 0rem;
+}
+
+.formSpan {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #353c41;
+}
+
+.formInput {
+  width: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.reqField {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 2rem;
+  text-transform: uppercase;
+  color: #aa1414;
+}
+
+.registerBtn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  border: none;
+  color: #fff;
+  background: rgba(23, 126, 201);
+  transition: all 0.25s ease;
+}
+
+.registerBtn:hover {
+  box-shadow: 0 10px 20px -10px rgba(23, 126, 201, 0.6);
+  transform: translateY(-5px);
+  background: rgba(23, 126, 201);
+}
+
+.buttonAction {
+  margin: 1.5rem 0rem;
+}

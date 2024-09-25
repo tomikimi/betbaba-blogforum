@@ -1,0 +1,35 @@
+.section-feeds {
+  padding: 1.8rem 0 9.6rem 0;
+}
+
+.feeds-container {
+  width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  /* margin: 7rem auto 0 auto; */
+}
+
+.feeds-header {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 4rem;
+  margin-bottom: 4.2rem;
+}
+
+.feeds-board {
+  height: 50.1rem;
+  width: 59.9rem;
+  border: none;
+}
+
+/* media query from 1270 */
+@media (max-width: 79em) {
+  .feeds-container {
+    width: 120rem;
+  }
+
+  .feeds-board {
+    width: 54.9rem;
+  }
+}

@@ -1,0 +1,49 @@
+.section-topic {
+  width: 130rem;
+  margin: 3rem auto;
+}
+
+.topic-header {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  color: rgb(45, 54, 59);
+  margin: 1.5rem 0;
+}
+
+.topic-container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.4rem;
+  padding: 2rem;
+}
+
+.formInput {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.registerBtn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  border: none;
+  color: #fff;
+  background: rgba(23, 126, 201);
+  transition: all 0.25s ease;
+}
+
+.registerBtn:hover {
+  box-shadow: 0 10px 20px -10px rgba(23, 126, 201, 0.6);
+  transform: translateY(-5px);
+  background: rgba(23, 126, 201);
+}
+
+.buttonAction {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0rem;
+}

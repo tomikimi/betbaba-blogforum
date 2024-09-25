@@ -1,0 +1,124 @@
+.section-footer {
+  background-color: #000;
+  /* margin-top: 5rem; */
+  padding: 1.2rem 2.4rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-rows: 3rem 12.5rem;
+  width: 130rem;
+  /* padding: 0 3.2rem; */
+  margin: 0 auto;
+}
+
+.footer-social-icons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* .footer-social-icons-container::after {
+  content: "";
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+} */
+
+.footer-icon-size {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-text-secondary {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+}
+
+.footer-regulation-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-regulation {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.footer-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+}
+.footer-logo {
+  width: 70px;
+  height: 50px;
+}
+
+.footer-regulatory-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-regulatory-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-link-container {
+  display: flex;
+  gap: 6rem;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+
+.footer-list-tag:not(:last-child)::after {
+  content: "|";
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+
+/* media query from 1270 */
+@media (max-width: 79em) {
+  .footer-container {
+    width: 120rem;
+  }
+}
