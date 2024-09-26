@@ -98,3 +98,43 @@
     color: #f3f4f7;
   }
 }
+
+/* media query from 870 */
+@media (max-width: 54.4em) {
+  .sidebar-menu-container {
+    width: 37vw;
+  }
+  .sidebar-profile {
+    width: 33vw;
+  }
+}
+
+/* media query from 780 */
+@media (max-width: 48.8em) {
+  .sidebar-menu-container {
+    width: 40vw;
+  }
+  .sidebar-profile {
+    width: 37vw;
+  }
+}
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .sidebar-menu-container {
+    width: 85vw;
+  }
+  .sidebar-profile {
+    width: 80vw;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 24.4em) {
+  .sidebar-menu-container {
+    width: 85vw;
+  }
+  .sidebar-profile {
+    width: 80vw;
+  }
+}

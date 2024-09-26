@@ -97,7 +97,7 @@
   gap: 6rem;
   list-style: none;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 1.8rem;
 }
 
@@ -120,5 +120,118 @@
 @media (max-width: 79em) {
   .footer-container {
     width: 120rem;
+  }
+}
+
+/* media query from 1270 */
+@media (max-width: 76em) {
+  .footer-container {
+    width: 105rem;
+  }
+}
+
+/* media query from 1025 */
+@media (max-width: 64em) {
+  .footer-container {
+    width: 95rem;
+  }
+}
+
+/* media query from 930 */
+@media (max-width: 58em) {
+  .footer-container {
+    width: 80rem;
+  }
+}
+
+/* media query from 870 */
+@media (max-width: 54.4em) {
+  .footer-container {
+    width: 80rem;
+  }
+  .footer-text-secondary {
+    text-align: center;
+  }
+}
+
+/* media query from 780 */
+@media (max-width: 48.8em) {
+  .footer-container {
+    width: 70rem;
+  }
+  .footer-text-secondary {
+    text-align: center;
+  }
+}
+
+/* media query from 680 */
+@media (max-width: 43em) {
+  .footer-container {
+    width: 65rem;
+  }
+  .footer-text-secondary {
+    text-align: center;
+  }
+}
+
+/* media query from 540 */
+@media (max-width: 33.8em) {
+  .footer-container {
+    width: 51rem;
+  }
+  .footer-text-secondary {
+    text-align: center;
+  }
+}
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .footer-container {
+    width: 38rem;
+  }
+  .footer-social-icons-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 2rem;
+    margin: 2.5rem 0rem;
+  }
+
+  .footer-link-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .footer-list-tag:not(:last-child)::after {
+    content: "";
+    margin-left: 0.5rem;
+  }
+  .footer-text-secondary {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 24.4em) {
+  .footer-container {
+    width: 28rem;
+  }
+  .footer-social-icons-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0rem 0rem;
+  }
+  .footer-text {
+    font-size: 1.5rem;
+  }
+  .footer-logo-container {
+    margin: 2rem 0rem;
+  }
+  .footer-text-secondary {
+    font-size: 1rem;
+    text-align: center;
   }
 }
