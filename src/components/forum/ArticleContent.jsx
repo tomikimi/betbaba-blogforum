@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { format } from "date-fns";
 import AppNav from "../AppNav";
+import Footer from "../Footer";
 import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import styles from "./articleContent.module.css";
@@ -97,6 +98,7 @@ function ArticleContent() {
           </>
         )}
       </section>
+      <Footer></Footer>
     </>
   );
 }

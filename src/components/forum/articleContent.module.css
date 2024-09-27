@@ -68,3 +68,140 @@
   font-size: 1.5rem;
   padding-left: 0.8rem;
 }
+
+/* media query from 1280 */
+@media (max-width: 80em) {
+  .article-container {
+    width: 122rem !important;
+  }
+}
+
+/* media query from 1024 */
+@media (max-width: 64em) {
+  .article-container {
+    width: 97rem !important;
+  }
+}
+
+/* media query from 870 */
+@media (max-width: 54.4em) {
+  .article-container {
+    width: 80rem !important;
+  }
+}
+
+/* media query from 853*/
+@media (max-width: 53.3em) {
+  .article-container {
+    width: 108rem !important;
+  }
+}
+
+/* media query from 820 */
+@media (max-width: 52em) {
+  .article-container {
+    width: 76rem !important;
+  }
+}
+
+/* media query from 780 */
+@media (max-width: 48.8em) {
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-img-box {
+    overflow: hidden;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 0px !important;
+  }
+
+  .article-text-box {
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+  }
+  .article-container {
+    width: 71rem;
+  }
+}
+
+/* media query from 740 */
+@media (max-width: 46.25em) {
+  .article-container {
+    width: 68rem !important;
+  }
+}
+
+/* media query from 700 */
+@media (max-width: 43.75em) {
+  .article-container {
+    width: 48rem !important;
+  }
+}
+
+/* media query from 700 */
+@media (max-width: 25.75em) {
+  .article-container {
+    width: 35rem !important;
+  }
+}
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-img-box {
+    overflow: hidden;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 0px !important;
+  }
+
+  .article-text-box {
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+  }
+
+  .article-container {
+    width: 35rem;
+  }
+}
+
+/* media query from 430 */
+@media (max-width: 26.9em) {
+  .article-container {
+    width: 37rem;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 24.4em) {
+  .article-container {
+    width: 32rem;
+  }
+}
+
+/* media query from 360 */
+@media (max-width: 23.4em) {
+  .article-container {
+    width: 30rem !important;
+  }
+
+  .article-dateStamp {
+    padding: 1rem;
+  }
+}
+
+/* media query from 360 */
+@media (max-width: 21.9em) {
+  .article-container {
+    width: 29rem !important;
+  }
+
+  .article-dateStamp {
+    padding: 0.85rem;
+  }
+}
