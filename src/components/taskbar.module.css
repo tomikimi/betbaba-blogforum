@@ -45,3 +45,74 @@
   cursor: pointer;
   color: #60cf71;
 }
+
+/* media query from 1270 */
+@media (max-width: 79em) {
+  .section-taskbar {
+    width: 120rem;
+  }
+}
+
+/* media query from 1200 */
+@media (max-width: 75em) {
+  .section-taskbar {
+    width: 105rem;
+  }
+}
+
+/* media query from 1145 */
+@media (max-width: 71.6em) {
+  .section-taskbar {
+    width: 95rem;
+  }
+}
+
+/* media query from 995 */
+@media (max-width: 62.2em) {
+  .section-taskbar {
+    width: 85rem;
+  }
+}
+
+/* media query from 890 */
+@media (max-width: 55.7em) {
+  .section-taskbar {
+    width: 74rem;
+  }
+}
+
+/* media query from 780 */
+@media (max-width: 48.8em) {
+  .section-taskbar {
+    width: 64rem;
+  }
+}
+
+/* media query from 660 */
+@media (max-width: 41.3em) {
+  .section-taskbar {
+    width: 51rem;
+  }
+  .taskbar-text {
+    font-size: 1.1rem;
+  }
+
+  .taskbar-link:link,
+  .taskbar-link:visited {
+    font-size: 1.1rem;
+  }
+}
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .section-taskbar {
+    width: 41rem;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 24.4em) {
+  .section-taskbar {
+    width: 28rem;
+  }
+}
