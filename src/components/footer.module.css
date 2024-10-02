@@ -116,6 +116,13 @@
   font-size: 1.5rem;
 }
 
+/* media query from 1280 */
+@media (max-width: 80em) {
+  .footer-container {
+    width: 125rem;
+  }
+}
+
 /* media query from 1270 */
 @media (max-width: 79em) {
   .footer-container {

@@ -69,7 +69,7 @@ function ForumUnreadContent() {
           <LoadingContent></LoadingContent>
         ) : (
           <div
-            className={topicStyles["forum-topic-replies-container"]}
+            className={styles["forum-topic-replies-container"]}
             key={topics._id}
           >
             {topics.map((topic) => (

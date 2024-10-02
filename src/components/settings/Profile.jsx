@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 import styles from "./profile.module.css";
-import forumStyle from "../forum/ForumTopicReplies.module.css";
+// import forumStyle from "../forum/ForumTopicReplies.module.css";
 // import SideBar from "./SideBar";
 
 function Profile() {

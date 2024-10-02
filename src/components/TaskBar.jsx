@@ -11,7 +11,10 @@ function TaskBar({ path }) {
         <div className={styles["taskbar-actions"]}>
           <ul className={styles["taskbar-list"]}>
             <li>
-              <NavLink to="unReadContent" className={styles["taskbar-link"]}>
+              <NavLink
+                to="/Discover/unReadContent"
+                className={styles["taskbar-link"]}
+              >
                 <FaNewspaper
                   style={{
                     marginRight: ".5rem",

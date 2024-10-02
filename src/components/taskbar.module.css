@@ -46,6 +46,13 @@
   color: #60cf71;
 }
 
+/* media query from 1280 */
+@media (max-width: 80em) {
+  .section-taskbar {
+    width: 125rem;
+  }
+}
+
 /* media query from 1270 */
 @media (max-width: 79em) {
   .section-taskbar {
@@ -113,6 +120,6 @@
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .section-taskbar {
-    width: 28rem;
+    width: 37rem;
   }
 }

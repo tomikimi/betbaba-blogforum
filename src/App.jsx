@@ -14,6 +14,7 @@ import PostArticle from "./components/settings/PostArticle";
 import ArticleContent from "./components/forum/ArticleContent";
 import EmailVerification from "./components/EmailVerification";
 import Verification from "./pages/Verification";
+import DiscoverPage from "./pages/DiscoverPage";
 
 function App() {
   return (
@@ -26,10 +27,6 @@ function App() {
             <Route
               path="forumReplies/:id"
               element={<ForumTopicReplies></ForumTopicReplies>}
-            ></Route>
-            <Route
-              path="unReadContent"
-              element={<ForumUnreadContent></ForumUnreadContent>}
             ></Route>
           </Route>
           <Route path="/setting" element={<SettingsPage></SettingsPage>}>
@@ -59,6 +56,15 @@ function App() {
             path="/Article/:id"
             element={<ArticleContent></ArticleContent>}
           ></Route>
+          <Route
+            path="Discover/unReadContent"
+            element={<DiscoverPage></DiscoverPage>}
+          >
+            <Route
+              index
+              element={<ForumUnreadContent></ForumUnreadContent>}
+            ></Route>
+          </Route>
           <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
         </Routes>
       </BrowserRouter>
