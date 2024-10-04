@@ -68,3 +68,99 @@
   border: none;
   border-radius: 0.4rem;
 }
+
+/* media query from 1280 */
+@media (max-width: 80em) {
+  .section-account {
+    width: 125rem;
+  }
+}
+
+/* media query from 1270 */
+@media (max-width: 79em) {
+  .section-account {
+    width: 120rem;
+  }
+}
+
+/* media query from 1200 */
+@media (max-width: 75em) {
+  .section-account {
+    width: 105rem;
+  }
+}
+
+/* media query from 1145 */
+@media (max-width: 71.6em) {
+  .section-account {
+    width: 95rem;
+  }
+}
+
+/* media query from 995 */
+@media (max-width: 62.2em) {
+  .section-account {
+    width: 85rem;
+  }
+
+  .accountCreation-gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .accountCreation-signUp {
+    border-bottom: 2px solid #2d363b0d;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* media query from 890 */
+@media (max-width: 55.7em) {
+  .section-account {
+    width: 74rem;
+  }
+}
+
+/* media query from 780 */
+@media (max-width: 48.8em) {
+  .section-account {
+    width: 64rem;
+  }
+
+  .accountCreation-h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+
+/* media query from 660 */
+@media (max-width: 41.3em) {
+  .section-account {
+    width: 51rem;
+  }
+}
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .section-account {
+    width: 41rem;
+  }
+  .accountCreation-paragraph {
+    text-align: center;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 24.4em) {
+  .section-account {
+    width: 37rem;
+  }
+  .accountCreation-h2 {
+    font-size: 2rem;
+  }
+
+  .accountCreation-paragraph {
+    font-size: 1.4rem;
+  }
+}

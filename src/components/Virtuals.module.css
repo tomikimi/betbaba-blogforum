@@ -142,9 +142,9 @@
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .virtual-container {
-    width: 37rem;
+    width: 34rem;
   }
   .virtual-content-img-box {
-    width: 31rem;
+    width: 28rem;
   }
 }

@@ -132,3 +132,24 @@
   transform: none;
   background: whitesmoke;
 }
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .modal {
+    width: 385px;
+  }
+}
+
+/* media query from 412 */
+@media (max-width: 25.75em) {
+  .modal {
+    width: 385px;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 24.4em) {
+  .modal {
+    width: 340px;
+  }
+}
