@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
-import axios from "axios";
-import styles from "./forumContent.module.css";
-import LoadingContent from "../../util/LoadingContent";
 import { Spinner } from "@blueprintjs/core";
+import axios from "axios";
+import LoadingContent from "../../util/LoadingContent";
+import styles from "./forumContent.module.css";
 
 const apiLink = "http://127.0.0.1:3001/api/v1/";
 
