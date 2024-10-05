@@ -21,7 +21,7 @@ import {
 } from "ckeditor5";
 import NotificationBar from "../../util/NotificationBar";
 import "ckeditor5/ckeditor5.css";
-import styles from "./EmailSettings.module.css";
+import styles from "./emailSettings.module.css";
 
 // import profile from "./profile.module.css";
 // import SideBar from "./SideBar";
