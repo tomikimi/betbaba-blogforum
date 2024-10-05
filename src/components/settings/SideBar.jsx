@@ -1,13 +1,7 @@
-import {
-  FaTachographDigital,
-  FaRegEnvelope,
-  FaKey,
-  FaMarker,
-} from "react-icons/fa6";
+import { FaTachographDigital, FaKey, FaMarker } from "react-icons/fa6";
 import Cookies from "js-cookie";
 import styles from "./profile.module.css";
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
 function SideBar() {
   const data = Cookies.get("user_profile");
   const profile = JSON.parse(data);

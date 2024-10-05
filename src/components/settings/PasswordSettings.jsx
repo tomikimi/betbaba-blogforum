@@ -4,7 +4,7 @@ import { OverlayToaster } from "@blueprintjs/core";
 import Cookies from "js-cookie";
 import NotificationBar from "../../util/NotificationBar";
 import axios from "axios";
-import styles from "./EmailSettings.module.css";
+import styles from "./emailSettings.module.css";
 
 // import profile from "./profile.module.css";
 // import SideBar from "./SideBar";

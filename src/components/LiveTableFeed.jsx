@@ -1,4 +1,4 @@
-import styles from "./LiveTableFeed.module.css";
+import styles from "./liveTableFeed.module.css";
 function LiveTableFeed() {
   return (
     <>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import NotificationBar from "../util/NotificationBar";
 import axios from "axios";
 import { Spinner } from "@blueprintjs/core";
-import styles from "./settings/EmailSettings.module.css";
+import styles from "./settings/emailSettings.module.css";
 import styles2 from "./resetPassword.module.css";
 import { useParams } from "react-router-dom";
 

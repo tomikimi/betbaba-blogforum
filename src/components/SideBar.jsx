@@ -9,9 +9,7 @@ import {
   cilUser,
   cilSettings,
 } from "@coreui/icons";
-import Cookies from "js-cookie";
-import styles from "./SideBar.module.css";
-import { useState } from "react";
+import styles from "./sideBar.module.css";
 
 function SideBar({ handleSideBar, handleLogOut, handleOpenModal, myProfile }) {
   let user = myProfile ? JSON.parse(myProfile) : "";

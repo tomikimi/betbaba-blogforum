@@ -22,7 +22,7 @@ import Cookies from "js-cookie";
 import NotificationBar from "../../util/NotificationBar";
 import axios from "axios";
 import "ckeditor5/ckeditor5.css";
-import styles from "./EmailSettings.module.css";
+import styles from "./emailSettings.module.css";
 
 const toasterInstance = OverlayToaster.create({ position: "bottom-right" });
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LoadingContent from "../util/LoadingContent";
-import styles from "./MostRead.module.css";
+import styles from "./mostRead.module.css";
 import axios from "axios";
 
 function MostRead() {

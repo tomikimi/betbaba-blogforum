@@ -1,5 +1,5 @@
-import styles from "./CreateTopic.module.css";
-import input from "../settings/EmailSettings.module.css";
+import styles from "./createTopic.module.css";
+import input from "../settings/emailSettings.module.css";
 function CreateTopic() {
   return (
     <>

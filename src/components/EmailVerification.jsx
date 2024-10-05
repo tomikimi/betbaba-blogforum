@@ -1,5 +1,5 @@
 import { FaEnvelope } from "react-icons/fa6";
-import styles from "./EmailVerification.module.css";
+import styles from "./emailVerification.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
