@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
 import axios from "axios";
-import styles from "./forumContent.module.css";
+import styles from "../../components/forum/forumConten.module.css";
 import LoadingContent from "../../util/LoadingContent";
 import { Spinner } from "@blueprintjs/core";
 
