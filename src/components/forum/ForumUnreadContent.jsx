@@ -5,7 +5,7 @@ import { Spinner } from "@blueprintjs/core";
 import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import topicStyles from "./forumTopicReplies.module.css";
-import styles from "./ForumUnreadContent.module.css";
+import styles from "./forumUnreadContent.module.css";
 
 const apiLink = "http://127.0.0.1:3001/api/v1/";
 
