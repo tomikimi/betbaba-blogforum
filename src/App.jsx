@@ -3,7 +3,7 @@ import ForumPage from "./pages/ForumPage";
 import SettingsPage from "./pages/SettingsPage";
 import PageNotFound from "./pages/PageNotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ForumTopicReplies from "./components/forum/forumTopicReplies";
+import ForumTopicReplies from "./components/forum/ForumTopicReplies";
 import ForumContent from "./components/forum/ForumContent";
 import ForumUnreadContent from "./components/forum/ForumUnreadContent";
 import ResetPage from "./pages/ResetPage";
@@ -12,7 +12,6 @@ import PasswordSettings from "./components/settings/passwordSettings";
 import Profile from "./components/settings/Profile";
 import PostArticle from "./components/settings/PostArticle";
 import ArticleContent from "./components/forum/ArticleContent";
-import EmailVerification from "./components/EmailVerification";
 import Verification from "./pages/Verification";
 import DiscoverPage from "./pages/DiscoverPage";
 

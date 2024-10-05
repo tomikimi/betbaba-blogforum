@@ -104,6 +104,7 @@ function ForumTopicReplies() {
       const res = await axios.post(`${apiLink}review`, data, {
         headers: { Authorization: `Bearer ${token}` },
       });
+      // console.log(res);
       addToast(() => (
         <NotificationToast
           color={"success"}
