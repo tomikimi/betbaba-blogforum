@@ -3,7 +3,7 @@ import AppNav from "../components/AppNav";
 import Footer from "../components/Footer";
 import TaskBar from "../components/TaskBar";
 import SideBar from "../components/settings/SideBar";
-import styles from "../components/settings/Profile.module.css";
+import styles from "../components/settings/profile.module.css";
 // import EmailSettings from "../components/settings/EmailSettings";
 // import Profile from "../components/settings/Profile";
 // import PasswordSettings from "../components/settings/passwordSettings";
