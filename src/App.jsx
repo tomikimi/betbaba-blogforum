@@ -8,7 +8,7 @@ import ForumContent from "./components/forum/ForumContent";
 import ForumUnreadContent from "./components/forum/ForumUnreadContent";
 import ResetPage from "./pages/ResetPage";
 import EmailSettings from "./components/settings/EmailSettings";
-import PasswordSettings from "./components/settings/passwordSettings";
+import PasswordSettings from "./components/settings/PasswordSettings";
 import Profile from "./components/settings/Profile";
 import PostArticle from "./components/settings/PostArticle";
 import ArticleContent from "./components/forum/ArticleContent";
