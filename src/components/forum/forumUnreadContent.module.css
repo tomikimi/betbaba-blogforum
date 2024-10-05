@@ -35,6 +35,45 @@
   flex-direction: column;
 }
 
+.reply-user-content {
+  height: 100%;
+}
+
+.reply-user-letter {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  padding: 1.9rem 2.4rem;
+  border-radius: 50%;
+  font-size: 4rem;
+}
+
+.reply-details {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.reply-data {
+  color: rgba(53, 60, 65);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 22px;
+  word-spacing: 2px;
+}
+
+.reply-time {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(113, 128, 150);
+}
+
+.reply-time:hover {
+  cursor: pointer;
+}
+
 .reply-button {
   align-self: flex-end;
   cursor: pointer;
@@ -123,6 +162,14 @@
   .forum-topic-replies-container {
     width: 64rem;
   }
+
+  .reply-details {
+    width: 57rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
+  }
 }
 
 /* media query from 660 */
@@ -132,6 +179,14 @@
   }
   .forum-topic-replies-container {
     width: 51rem;
+  }
+
+  .reply-details {
+    width: 47rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
   }
 }
 
@@ -143,6 +198,14 @@
   .forum-topic-replies-container {
     width: 39rem;
   }
+
+  .reply-details {
+    width: 37rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
+  }
 }
 
 /* media query from 430 */
@@ -152,6 +215,13 @@
   }
   .forum-topic-replies-container {
     width: 37rem;
+  }
+  .reply-details {
+    width: 34rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
   }
 }
 
@@ -163,6 +233,13 @@
   .forum-topic-replies-container {
     width: 39rem;
   }
+  .reply-details {
+    width: 36rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
+  }
 }
 
 /* media query from 380 */
@@ -173,6 +250,13 @@
   .forum-topic-replies-container {
     width: 37rem;
   }
+  .reply-details {
+    width: 34rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
+  }
 }
 
 /* media query from 360 */
@@ -182,5 +266,12 @@
   }
   .forum-topic-replies-container {
     width: 34rem;
+  }
+  .reply-details {
+    width: 30rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
   }
 }

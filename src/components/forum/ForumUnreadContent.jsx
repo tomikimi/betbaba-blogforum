@@ -4,7 +4,6 @@ import { format } from "date-fns";
 import { Spinner } from "@blueprintjs/core";
 import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
-import topicStyles from "./forumTopicReplies.module.css";
 import styles from "./forumUnreadContent.module.css";
 
 const apiLink = "http://127.0.0.1:3001/api/v1/";
@@ -78,21 +77,21 @@ function ForumUnreadContent() {
                   className={styles["unread-content-container"]}
                   key={topic._id}
                 >
-                  <div className={topicStyles["reply-user-content"]}>
-                    <span className={topicStyles["reply-user-letter"]}>
+                  <div className={styles["reply-user-content"]}>
+                    <span className={styles["reply-user-letter"]}>
                       {getFirstLetter(topic.createdBy[0].name)}
                     </span>
                   </div>
-                  <div className={topicStyles["reply-details"]}>
+                  <div className={styles["reply-details"]}>
                     <span className={styles["unread-content-post"]}>
                       {topic.title}
                     </span>
-                    <p className={topicStyles["reply-data"]}>
+                    <p className={styles["reply-data"]}>
                       {topic.createdBy[0].name} Posted a Topic in{" "}
                       {topic.category[0].name}
                     </p>
                     <div className={styles["unread-post-timeline"]}>
-                      <span className={topicStyles["reply-time"]}>
+                      <span className={styles["reply-time"]}>
                         <FaClockRotateLeft
                           style={{
                             marginRight: ".5rem",
@@ -103,7 +102,7 @@ function ForumUnreadContent() {
                         {formatDate(topic.createdAt, "PostTime")}
                       </span>
 
-                      <span className={topicStyles["reply-time"]}>
+                      <span className={styles["reply-time"]}>
                         <FaComment
                           style={{
                             marginRight: ".5rem",
