@@ -22,7 +22,7 @@ import {
 } from "ckeditor5";
 import parse from "html-react-parser";
 import Cookie from "js-cookie";
-import styles from "./forumTopicReplies.module.css";
+import styles from "./topicReplies.module.css";
 import "ckeditor5/ckeditor5.css";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import axios from "axios";
