@@ -30,8 +30,7 @@ import axios from "axios";
 import NotificationToast from "../../util/NotificationToast";
 import AccountCreationSignIn from "../../util/AccountCreationSignIn";
 
-const apiLink = "http://127.0.0.1:3001/api/v1/";
-const photoPath = "http://127.0.0.1:3001/img/topics/";
+const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
 function ForumTopicReplies() {
   const [review, setReview] = useState("");
@@ -61,7 +60,7 @@ function ForumTopicReplies() {
         try {
           console.log("UseEffect Runs");
           if (token) {
-            const res = await axios.get(`${apiLink}forum/${forumID}`, {
+            const res = await axios.get(`${VITE_API_URL}forum/${forumID}`, {
               headers: { Authorization: `Bearer ${token}` },
             });
             const { data } = res.data;
@@ -101,7 +100,7 @@ function ForumTopicReplies() {
     try {
       setIsLoading(true);
       // setError("");
-      const res = await axios.post(`${apiLink}review`, data, {
+      const res = await axios.post(`${VITE_API_URL}review`, data, {
         headers: { Authorization: `Bearer ${token}` },
       });
       // console.log(res);
@@ -142,7 +141,7 @@ function ForumTopicReplies() {
         comment,
         user: userID,
       };
-      const res = await axios.post(`${apiLink}comment`, userComment, {
+      const res = await axios.post(`${VITE_API_URL}comment`, userComment, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -241,7 +240,7 @@ function ForumTopicReplies() {
                       <div>
                         <img
                           className={styles["main-post-photo"]}
-                          src={`${photoPath}${replies.photo}`}
+                          src={`${VITE_PHOTO_PATH}${replies.photo}`}
                           alt={"forum-photo"}
                         />
                       </div>
