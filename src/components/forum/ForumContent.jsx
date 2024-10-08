@@ -4,7 +4,7 @@ import { format } from "date-fns";
 import { Spinner } from "@blueprintjs/core";
 import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
-import styles from "./forumContent.module.css";
+import styles from "./contentForum.module.css";
 
 const { VITE_API_URL } = import.meta.env;
 

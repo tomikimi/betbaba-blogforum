@@ -11,10 +11,11 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import styles from "./Hero.module.css";
 import { Link } from "react-router-dom";
 
-const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
+const { VITE_APP_ENV, VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
 function Hero() {
   const [fliers, setFliers] = useState([]);
+  console.log(VITE_APP_ENV);
 
   useEffect(function () {
     async function fetchMatchOfTheDay() {
