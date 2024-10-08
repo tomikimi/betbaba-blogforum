@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
-import styles from "./AccountCreationSignIn.module.css";
+import styles from "./accountCreationSignIn.module.css";
 import Modal from "./Modal";
 
 function AccountCreationSignIn() {
