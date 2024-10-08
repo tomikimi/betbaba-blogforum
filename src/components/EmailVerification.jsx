@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Spinner } from "@blueprintjs/core";
 
-const apiLink = "http://127.0.0.1:3001/api/v1/";
+const { VITE_API_URL } = import.meta.env;
 
 function EmailVerification() {
   const [isLoading, setIsLoading] = useState(false);
@@ -16,7 +16,7 @@ function EmailVerification() {
   async function handleEmailActivation() {
     try {
       setIsLoading(true);
-      const res = await axios.get(`${apiLink}user/activateAccount/${id}`);
+      const res = await axios.get(`${VITE_API_URL}user/activateAccount/${id}`);
       if (res.status === 200) {
         navigate("/");
       }
