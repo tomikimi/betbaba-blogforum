@@ -112,3 +112,14 @@
     transition: all 0.5s;
   }
 }
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .header {
+    padding: 0 0.8rem;
+  }
+
+  .logo {
+    height: 6.5rem;
+  }
+}

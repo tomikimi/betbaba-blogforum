@@ -196,6 +196,10 @@ body {
 }
 
 @media (max-width: 31em) {
+  html {
+    font-size: 52.5%;
+  }
+
   .heading-primary {
     font-size: 2.5rem;
   }
@@ -210,6 +214,11 @@ body {
 
   .ck.ck-reset {
     width: 37.5rem !important;
+  }
+
+  .icon-4xl {
+    width: 3rem !important;
+    height: 3rem !important;
   }
 }
 
