@@ -24,7 +24,7 @@ function TaskBar({ path }) {
                 <span>Unread Content</span>
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <a href="" className={styles["taskbar-link"]}>
                 <FaCheck
                   style={{
@@ -34,7 +34,7 @@ function TaskBar({ path }) {
                 />{" "}
                 <span>Mark Contents Read</span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </section>
