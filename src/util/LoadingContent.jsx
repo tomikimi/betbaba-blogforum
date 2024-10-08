@@ -1,5 +1,5 @@
 import { Spinner } from "@blueprintjs/core";
-import styles from "./loadingContent.module.css";
+import styles from "./loadingContentPack.module.css";
 function LoadingContent() {
   return (
     <div className={styles["loader-container"]}>
