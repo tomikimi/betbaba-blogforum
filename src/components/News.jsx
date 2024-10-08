@@ -4,8 +4,7 @@ import LoadingContent from "../util/LoadingContent";
 import axios from "axios";
 import styles from "./News.module.css";
 
-const apiLink = "http://127.0.0.1:3001/api/v1/";
-const photoPath = "http://127.0.0.1:3001/img/topics/";
+const { VITE_APP_URL, VITE_PHOTO_PATH } = import.meta.env;
 
 function News() {
   const [articles, setArticles] = useState([]);
@@ -13,7 +12,7 @@ function News() {
   useEffect(function () {
     async function fetchTop6Articles() {
       try {
-        const res = await axios(`${apiLink}forum/top3Articles`);
+        const res = await axios(`${VITE_APP_URL}forum/top3Articles`);
         const { forum } = res.data;
         setArticles(forum);
       } catch (err) {
@@ -36,7 +35,7 @@ function News() {
                 <Link to={`/Article/${article._id}`}>
                   <div className={styles["news-content-img-box"]}>
                     <img
-                      src={`${photoPath}${article.photo}`}
+                      src={`${VITE_PHOTO_PATH}${article.photo}`}
                       alt="Cashout Offer"
                       className={styles["news-content-img"]}
                     />
