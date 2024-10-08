@@ -11,6 +11,8 @@ import Cookies from "js-cookie";
 import styles from "./AppNav.module.css";
 import SideBar from "./SideBar";
 
+const { VITE_API_URL } = import.meta.env;
+
 function AppNav() {
   const [isOpen, setIsOpen] = useState(false);
   const [sideBar, setSideBar] = useState(false);
@@ -27,12 +29,9 @@ function AppNav() {
       async function fetchUserDetail() {
         try {
           if (token) {
-            const response = await axios.get(
-              "http://127.0.0.1:3001/api/v1/user/me",
-              {
-                headers: { Authorization: `Bearer ${token}` },
-              }
-            );
+            const response = await axios.get(`${VITE_API_URL}user/me`, {
+              headers: { Authorization: `Bearer ${token}` },
+            });
             const { data } = response.data;
             const profile = JSON.stringify(data.user);
             Cookies.set("user_profile", profile);
