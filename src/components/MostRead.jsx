@@ -4,14 +4,14 @@ import LoadingContent from "../util/LoadingContent";
 import styles from "./mostRead.module.css";
 import axios from "axios";
 
+const { VITE_API_URL } = import.meta.env;
+
 function MostRead() {
   const [posts, setPosts] = useState([]);
 
-  const apiLink = "http://127.0.0.1:3001/api/v1/";
-
   useEffect(function () {
     async function getMostRead() {
-      const { data } = await axios.get(`${apiLink}forum/mostReadPosts`);
+      const { data } = await axios.get(`${VITE_API_URL}forum/mostReadPosts`);
       setPosts(() => data.posts);
     }
     getMostRead();
