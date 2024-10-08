@@ -16,6 +16,8 @@ import styles from "./SignUp.module.css";
 //   );
 // }
 
+const { VITE_API_URL } = import.meta.env;
+
 function SignUp({ setIsOpen }) {
   const [name, setName] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -64,10 +66,7 @@ function SignUp({ setIsOpen }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       };
-      const res = await fetch(
-        "http://127.0.0.1:3001/api/v1/user/signup",
-        requestOptions
-      );
+      const res = await fetch(`${VITE_API_URL}user/signup`, requestOptions);
       const result = await res.json();
       if (result.status == "error") {
         setError(true);
