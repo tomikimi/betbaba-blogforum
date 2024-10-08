@@ -1,5 +1,5 @@
 import { FaNewspaper } from "react-icons/fa6";
-import styles from "./Taskbar.module.css";
+import styles from "./taskBarControl.module.css";
 import { NavLink } from "react-router-dom";
 function TaskBar({ path }) {
   return (
