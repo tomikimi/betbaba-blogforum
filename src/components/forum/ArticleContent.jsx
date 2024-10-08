@@ -7,8 +7,7 @@ import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import styles from "./articleContent.module.css";
 
-const apiLink = "http://127.0.0.1:3001/api/v1/";
-const photoPath = "http://127.0.0.1:3001/img/topics/";
+const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
 function ArticleContent() {
   const [article, setArticle] = useState([]);
@@ -18,7 +17,7 @@ function ArticleContent() {
     function () {
       async function fetchArticle() {
         try {
-          const res = await axios(`${apiLink}forum/article/${id}`);
+          const res = await axios(`${VITE_API_URL}forum/article/${id}`);
           const { forum } = res.data.data;
           console.log(forum);
 
@@ -54,7 +53,7 @@ function ArticleContent() {
             <>
               <div className={styles["article-img-box"]}>
                 <img
-                  src={`${photoPath}${article[0].photo}`}
+                  src={`${VITE_PHOTO_PATH}${article[0].photo}`}
                   className={styles["article-img"]}
                 />
               </div>
