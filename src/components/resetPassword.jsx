@@ -6,6 +6,8 @@ import styles from "./settings/emailSettings.module.css";
 import styles2 from "./resetPassword.module.css";
 import { useParams } from "react-router-dom";
 
+const { VITE_API_URL } = import.meta.env;
+
 function ResetPassword() {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -31,7 +33,7 @@ function ResetPassword() {
       setIsLoading(true);
       setError("");
       const response = await axios.patch(
-        `http://127.0.0.1:3001/api/v1/user/resetPassword/${id}`,
+        `${VITE_API_URL}user/resetPassword/${id}`,
         data
       );
       setMessage(response.data);
