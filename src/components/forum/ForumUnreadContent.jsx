@@ -6,7 +6,7 @@ import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import styles from "./forumUnreadContent.module.css";
 
-const apiLink = "http://127.0.0.1:3001/api/v1/";
+const { VITE_API_URL } = import.meta.env;
 
 function ForumUnreadContent() {
   const [topics, setTopics] = useState([]);
@@ -16,7 +16,7 @@ function ForumUnreadContent() {
   useEffect(function () {
     async function fetchUnreadTopics() {
       try {
-        const res = await axios.get(`${apiLink}forum`);
+        const res = await axios.get(`${VITE_API_URL}forum`);
         const { forum } = res.data;
         setTopics(() => forum);
       } catch (err) {
@@ -30,7 +30,7 @@ function ForumUnreadContent() {
     try {
       setIsLoading(true);
       const res = await axios.get(
-        `${apiLink}forum/unread?page=${page}&limit=1`
+        `${VITE_API_URL}forum/unread?page=${page}&limit=1`
       );
       setPage((val) => Number(val + 1));
       const { data } = res.data;
