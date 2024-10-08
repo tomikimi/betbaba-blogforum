@@ -6,7 +6,7 @@ import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import styles from "./forumContent.module.css";
 
-const apiLink = "http://127.0.0.1:3001/api/v1/";
+const { VITE_API_URL } = import.meta.env;
 
 function ForumContent() {
   const [topics, setTopics] = useState([]);
@@ -15,7 +15,7 @@ function ForumContent() {
   useEffect(function () {
     async function fetchTopics() {
       try {
-        const res = await axios.get(`${apiLink}forum`);
+        const res = await axios.get(`${VITE_API_URL}forum`);
         const { forum } = res.data;
         setTopics(() => forum);
       } catch (err) {
@@ -28,7 +28,7 @@ function ForumContent() {
   useEffect(function () {
     async function fetchForumReviewStats() {
       try {
-        const res = await axios.get(`${apiLink}forum/forumReviewStats`);
+        const res = await axios.get(`${VITE_API_URL}forum/forumReviewStats`);
         const { data } = res;
         setTopicReview(() => data);
       } catch (err) {
@@ -41,7 +41,7 @@ function ForumContent() {
   useEffect(function () {
     async function fetchUserStats() {
       try {
-        const res = await axios.get(`${apiLink}forum/userStats`);
+        const res = await axios.get(`${VITE_API_URL}forum/userStats`);
         const { data } = res;
         console.log(data);
         setUserStats(() => data);
