@@ -4,7 +4,7 @@ import LoadingContent from "../util/LoadingContent";
 import axios from "axios";
 import styles from "./News.module.css";
 
-const { VITE_APP_URL, VITE_PHOTO_PATH } = import.meta.env;
+const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
 function News() {
   const [articles, setArticles] = useState([]);
@@ -12,7 +12,7 @@ function News() {
   useEffect(function () {
     async function fetchTop6Articles() {
       try {
-        const res = await axios(`${VITE_APP_URL}forum/top3Articles`);
+        const res = await axios(`${VITE_API_URL}forum/top3Articles`);
         const { forum } = res.data;
         setArticles(forum);
       } catch (err) {
