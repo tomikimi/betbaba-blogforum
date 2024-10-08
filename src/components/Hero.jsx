@@ -11,8 +11,7 @@ import "@coreui/coreui/dist/css/coreui.min.css";
 import styles from "./Hero.module.css";
 import { Link } from "react-router-dom";
 
-const apiLink = "http://127.0.0.1:3001/api/v1/";
-const photoPath = "http://127.0.0.1:3001/img/topics/";
+const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
 function Hero() {
   const [fliers, setFliers] = useState([]);
@@ -20,7 +19,7 @@ function Hero() {
   useEffect(function () {
     async function fetchMatchOfTheDay() {
       try {
-        const res = await axios(`${apiLink}forum/MatchOfTheDay`);
+        const res = await axios(`${VITE_API_URL}forum/MatchOfTheDay`);
         const { forum } = res.data;
         console.log(forum);
         setFliers(forum);
@@ -46,7 +45,7 @@ function Hero() {
                 >
                   <CImage
                     className={styles["hero-img"]}
-                    src={`${photoPath}${flier.photo}`}
+                    src={`${VITE_PHOTO_PATH}${flier.photo}`}
                     alt={flier?.type}
                   />
                   <CCarouselCaption className={styles["hero-text-box"]}>

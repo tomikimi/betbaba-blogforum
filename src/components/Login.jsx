@@ -6,6 +6,8 @@ import NotificationBar from "../util/NotificationBar";
 import axios from "axios";
 import styles from "./SignUp.module.css";
 
+const { VITE_API_URL } = import.meta.env;
+
 function Login({ setIsOpen, modalName }) {
   const [form, setForm] = useState(false);
   const [email, setEmail] = useState("");
@@ -17,6 +19,8 @@ function Login({ setIsOpen, modalName }) {
   const [message, setMessage] = useState({});
   const location = useLocation();
   const navigate = useNavigate();
+
+  // console.log(VITE_APP_API_URL);
 
   function handleEmailValue(e) {
     setEmail(e.target.value);
@@ -48,7 +52,7 @@ function Login({ setIsOpen, modalName }) {
       setLoader(true);
       setError("");
       const response = await axios.post(
-        `http://127.0.0.1:3001/api/v1/user/forgotPassword`,
+        `${VITE_API_URL}user/forgotPassword`,
         data
       );
       setMessage(response.data);
@@ -79,7 +83,7 @@ function Login({ setIsOpen, modalName }) {
       // };
 
       const response = await axios.post(
-        "http://127.0.0.1:3001/api/v1/user/login",
+        `${VITE_API_URL}user/login`,
         credentials
       );
       setMessage(response.data);

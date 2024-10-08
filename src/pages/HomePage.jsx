@@ -13,9 +13,12 @@ const goalNewsKey = "1qapi5e2olfk1d8iwkli7kitltfovkd38oj7fyxa";
 
 `https://cdn.mysitemapgenerator.com/shareapi/rss/1508793958`;
 
+const { VITE_API_URL } = import.meta.env;
+
 function HomePage() {
   const [feeds, setFeeds] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  console.log(import.meta.env);
   useEffect(function () {
     async function NewsFeed() {
       try {
