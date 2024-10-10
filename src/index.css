@@ -223,6 +223,10 @@ body {
     width: 3rem !important;
     height: 3rem !important;
   }
+
+  .logo_sm {
+    height: 2rem;
+  }
 }
 
 /* media query from 430 */
@@ -244,6 +248,20 @@ body {
 
   .ck.ck-reset {
     width: 34rem !important;
+  }
+
+  .span-label {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 2px 11px;
+  }
+
+  .span-logo-text {
+    font-size: 2rem;
+  }
+
+  .logo_sm {
+    height: 2rem;
   }
 }
 
