@@ -41,7 +41,7 @@
   }
 
   .feeds-board {
-    width: 42.9rem;
+    width: 47.9rem;
   }
 }
 
@@ -49,6 +49,7 @@
 @media (max-width: 64em) {
   .feeds-container {
     width: 95rem;
+    padding: 0 2.2rem;
   }
   .feeds-board {
     width: 40.9rem;
@@ -67,8 +68,11 @@
 
 /* media query from 780 */
 @media (max-width: 48.8em) {
+  .feeds-container {
+    padding: 0 6.2rem;
+  }
   .feeds-board {
-    width: 70rem;
+    width: 64rem;
   }
 }
 
@@ -82,23 +86,66 @@
 /* media query from 540 */
 @media (max-width: 33.8em) {
   .feeds-board {
-    width: 45rem;
+    width: 55.5rem;
   }
 }
 
 /* media query from 490 */
 @media (max-width: 31em) {
   .feeds-board {
-    width: 35rem;
+    width: 45.5rem;
   }
   .feeds-header {
     font-size: 3rem;
   }
 }
 
+/* media query from 430 */
+@media (max-width: 27em) {
+  .feeds-container {
+    padding: 0 2.2rem;
+  }
+  .feeds-board {
+    width: 44.5rem;
+  }
+  .feeds-header {
+    font-size: 3rem;
+  }
+}
+
+/* media query from 414*/
+@media (max-width: 26em) {
+  .feeds-board {
+    width: 44.5rem;
+  }
+  .feeds-header {
+    font-size: 3rem;
+  }
+  .feeds-container {
+    padding: 0 2.2rem;
+  }
+}
+
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .feeds-board {
-    width: 31rem;
+    width: 40.5rem;
+  }
+}
+
+/* media query from 390 */
+@media (max-width: 24.37em) {
+  .feeds-header {
+    font-size: 2.5rem;
+  }
+  .feeds-board {
+    width: 42.5rem;
+  }
+}
+
+/* media query from 360 */
+@media (max-width: 22.5em) {
+  .feeds-board {
+    width: 38.5rem;
   }
 }

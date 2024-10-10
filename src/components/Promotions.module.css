@@ -48,7 +48,7 @@
 /* media query from 1200 */
 @media (max-width: 76em) {
   .promotion-container {
-    width: 105rem;
+    width: 100rem;
   }
   .promotion-content-img-box {
     width: 32rem;
