@@ -190,6 +190,9 @@ body {
 
 /* media query from 540 */
 @media (max-width: 33.8em) {
+  html {
+    font-size: 50%;
+  }
   .content {
     flex-direction: row;
   }
