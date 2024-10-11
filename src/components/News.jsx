@@ -37,6 +37,7 @@ function News() {
                     <img
                       src={`${VITE_PHOTO_PATH}${article.photo}`}
                       alt="Cashout Offer"
+                      loading="lazy"
                       className={styles["news-content-img"]}
                     />
                   </div>

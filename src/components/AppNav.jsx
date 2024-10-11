@@ -91,6 +91,7 @@ function AppNav() {
           <img
             src="/logo/betbaba_logo_file_v2_png.png"
             alt="Betbaba Logo"
+            loading="lazy"
             className={styles.logo}
           />
         </Link>

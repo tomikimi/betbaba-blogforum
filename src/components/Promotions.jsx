@@ -63,6 +63,7 @@ function Promotions() {
                 <img
                   src="/promo/cashout_offer.webp"
                   alt="Cashout Offer"
+                  loading="lazy"
                   className={styles["promotion-content-img"]}
                 />
               </div>
@@ -89,6 +90,7 @@ function Promotions() {
                 <img
                   src="/promo/bonus_offer.webp"
                   alt="Bonus Offer"
+                  loading="lazy"
                   className={styles["promotion-content-img"]}
                 />
               </div>
@@ -115,6 +117,7 @@ function Promotions() {
                 <img
                   src="/promo/accumulator_offer.webp"
                   alt="Cashout Offer"
+                  loading="lazy"
                   className={styles["promotion-content-img"]}
                 />
               </div>

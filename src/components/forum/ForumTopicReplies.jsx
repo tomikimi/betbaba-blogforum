@@ -242,6 +242,7 @@ function ForumTopicReplies() {
                           className={styles["main-post-photo"]}
                           src={`${VITE_PHOTO_PATH}${replies.photo}`}
                           alt={"forum-photo"}
+                          loading="lazy"
                         />
                       </div>
                     ) : (

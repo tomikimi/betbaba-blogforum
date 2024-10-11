@@ -14,6 +14,7 @@ function Virtuals() {
               <img
                 src="/virtuals/drag_racing.jpg"
                 alt="Drag Racing"
+                loading="lazy"
                 className={styles["virtual-content-img"]}
               />
             </div>
@@ -40,6 +41,7 @@ function Virtuals() {
               <img
                 src="/virtuals/virtual_racing.jpg"
                 alt="Virtual Racing"
+                loading="lazy"
                 className={styles["virtual-content-img"]}
               />
             </div>
@@ -66,6 +68,7 @@ function Virtuals() {
               <img
                 src="/virtuals/virtual_tennis.jpg"
                 alt="Virtual Tennis"
+                loading="lazy"
                 className={styles["virtual-content-img"]}
               />
             </div>
