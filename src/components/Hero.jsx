@@ -48,6 +48,7 @@ function Hero() {
                     className={styles["hero-img"]}
                     src={`${VITE_PHOTO_PATH}${flier.photo}`}
                     alt={flier?.type}
+                    loading="lazy"
                   />
                   <CCarouselCaption className={styles["hero-text-box"]}>
                     <Link
