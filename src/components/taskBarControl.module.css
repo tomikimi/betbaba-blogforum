@@ -1,6 +1,7 @@
 .section-taskbar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: end;
   width: 130rem;
   margin: 3rem auto;
   padding: 1rem 2.2rem;
@@ -28,6 +29,7 @@
   list-style: none;
   align-items: center;
   gap: 1.8rem;
+  margin-bottom: 0rem;
 }
 
 .taskbar-link:link,
@@ -120,6 +122,10 @@
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .section-taskbar {
-    width: 37rem;
+    width: 43rem;
+  }
+
+  .taskbar-list {
+    margin-bottom: 0rem;
   }
 }
