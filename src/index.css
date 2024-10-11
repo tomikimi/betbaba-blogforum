@@ -177,14 +177,14 @@ body {
 /* media query from 780 */
 @media (max-width: 48.8em) {
   .ck.ck-reset {
-    width: 57rem !important;
+    width: 68rem !important;
   }
 }
 
 /* media query from 780 */
 @media (max-width: 41.3em) {
   .ck.ck-reset {
-    width: 47rem !important;
+    width: 57rem !important;
   }
 }
 
@@ -216,7 +216,7 @@ body {
   }
 
   .ck.ck-reset {
-    width: 37.5rem !important;
+    width: 43rem !important;
   }
 
   .icon-4xl {
@@ -232,7 +232,7 @@ body {
 /* media query from 430 */
 @media (max-width: 26.9em) {
   .ck.ck-reset {
-    width: 36rem !important;
+    width: 43rem !important;
   }
 }
 
@@ -250,7 +250,7 @@ body {
   }
 
   .ck.ck-reset {
-    width: 34rem !important;
+    width: 39rem !important;
   }
 
   .span-label {
@@ -271,6 +271,6 @@ body {
 /* media query from 360 */
 @media (max-width: 22.5em) {
   .ck.ck-reset {
-    width: 30rem !important;
+    width: 35.6rem !important;
   }
 }
