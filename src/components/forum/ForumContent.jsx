@@ -179,6 +179,7 @@ function ForumContent() {
               <img
                 src="/promo/telegram_banner.png"
                 alt="betbaba telegram channel"
+                loading="lazy"
                 className={styles["forum-social-icon"]}
               />
             </a>
@@ -188,6 +189,7 @@ function ForumContent() {
               <img
                 src="/promo/instagram_banner.png"
                 alt="betbaba instagram channel"
+                loading="lazy"
                 className={styles["forum-social-icon"]}
               />
             </a>
@@ -197,6 +199,7 @@ function ForumContent() {
               <img
                 src="/promo/youtube_banner.png"
                 alt="betbaba youtube channel"
+                loading="lazy"
                 className={styles["forum-social-icon"]}
               />
             </a>
@@ -206,6 +209,7 @@ function ForumContent() {
               <img
                 src="/promo/facebook_banner.png"
                 alt="betbaba facebook channel"
+                loading="lazy"
                 className={styles["forum-social-icon"]}
               />
             </a>

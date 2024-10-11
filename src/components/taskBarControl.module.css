@@ -72,7 +72,7 @@
 /* media query from 1145 */
 @media (max-width: 71.6em) {
   .section-taskbar {
-    width: 95rem;
+    width: 100rem;
   }
 }
 
@@ -93,14 +93,14 @@
 /* media query from 780 */
 @media (max-width: 48.8em) {
   .section-taskbar {
-    width: 64rem;
+    width: 71rem;
   }
 }
 
 /* media query from 660 */
 @media (max-width: 41.3em) {
   .section-taskbar {
-    width: 51rem;
+    width: 61rem;
   }
   .taskbar-text {
     font-size: 1.1rem;
@@ -115,7 +115,7 @@
 /* media query from 490 */
 @media (max-width: 31em) {
   .section-taskbar {
-    width: 41rem;
+    width: 47rem;
   }
 }
 
@@ -123,6 +123,28 @@
 @media (max-width: 24.4em) {
   .section-taskbar {
     width: 43rem;
+  }
+
+  .taskbar-list {
+    margin-bottom: 0rem;
+  }
+}
+
+/* media query from 360 */
+@media (max-width: 23em) {
+  .section-taskbar {
+    width: 41rem;
+  }
+
+  .taskbar-list {
+    margin-bottom: 0rem;
+  }
+}
+
+/* media query from 344 */
+@media (max-width: 22em) {
+  .section-taskbar {
+    width: 39rem;
   }
 
   .taskbar-list {

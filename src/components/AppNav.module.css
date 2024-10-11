@@ -113,6 +113,20 @@
   }
 }
 
+/* media query from 1145 */
+@media (max-width: 71.6em) {
+  .header {
+    padding: 0 2.8rem;
+  }
+}
+
+/* media query from 780 */
+@media (max-width: 48.8em) {
+  .header {
+    padding: 0 2.5rem;
+  }
+}
+
 /* media query from 490 */
 @media (max-width: 31em) {
   .header {

@@ -137,7 +137,7 @@
 /* media query from 1145 */
 @media (max-width: 71.6em) {
   .section-forum {
-    width: 95rem;
+    width: 100rem;
   }
 }
 
@@ -165,10 +165,17 @@
   }
 }
 
+/* media query from 853 */
+@media (max-width: 53em) {
+  .section-forum {
+    width: 106rem;
+  }
+}
+
 /* media query from 780 */
 @media (max-width: 48.8em) {
   .section-forum {
-    width: 64rem;
+    width: 71rem;
   }
 
   .forum-list {
@@ -186,20 +193,34 @@
 /* media query from 660 */
 @media (max-width: 41.3em) {
   .section-forum {
-    width: 51rem;
+    width: 61rem;
   }
 }
 
 /* media query from 490 */
 @media (max-width: 31em) {
   .section-forum {
-    width: 41rem;
+    width: 47rem;
   }
 }
 
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .section-forum {
-    width: 28rem;
+    width: 43rem;
+  }
+}
+
+/* media query from 360 */
+@media (max-width: 23em) {
+  .section-forum {
+    width: 41rem;
+  }
+}
+
+/* media query from 344 */
+@media (max-width: 22em) {
+  .section-forum {
+    width: 39rem;
   }
 }
