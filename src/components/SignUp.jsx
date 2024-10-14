@@ -29,6 +29,8 @@ function SignUp({ setIsOpen }) {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   function handleName(e) {
+    console.log("name input");
+    console.log(e.target.value);
     setName(() => e.target.value);
   }
 
