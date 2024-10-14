@@ -74,6 +74,7 @@ function SignUp({ setIsOpen }) {
         setError(true);
         setMessage(result);
       }
+      console.log("After no error");
       setMessage(result);
       setName("");
       setDisplayName("");
