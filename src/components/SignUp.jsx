@@ -69,7 +69,7 @@ function SignUp({ setIsOpen }) {
       const res = await fetch(`${VITE_API_URL}user/signup`, requestOptions);
       const result = await res.json();
       console.log(result);
-      if (result.status == "error") {
+      if (result.status == "error" || result.status == "fail") {
         setError(true);
         setMessage(result);
       }
