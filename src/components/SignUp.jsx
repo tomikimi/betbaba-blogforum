@@ -70,6 +70,7 @@ function SignUp({ setIsOpen }) {
       const result = await res.json();
       console.log(result);
       if (result.status == "error" || result.status == "fail") {
+        console.log("Handle Error");
         setError(true);
         setMessage(result);
       }
