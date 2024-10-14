@@ -73,6 +73,8 @@ function SignUp({ setIsOpen }) {
         console.log("Handle Error");
         setError(true);
         setMessage(result);
+
+        return;
       }
       console.log("After no error");
       setMessage(result);
