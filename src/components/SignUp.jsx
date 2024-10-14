@@ -29,8 +29,6 @@ function SignUp({ setIsOpen }) {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   function handleName(e) {
-    console.log("name input");
-    console.log(e.target.value);
     setName(() => e.target.value);
   }
 
@@ -77,7 +75,6 @@ function SignUp({ setIsOpen }) {
         setMessage(result);
         return;
       }
-      console.log("After no error");
       setMessage(result);
       setName("");
       setDisplayName("");
@@ -101,7 +98,7 @@ function SignUp({ setIsOpen }) {
       )}
       {error && (
         <NotificationBar intent={`bp5-intent-danger`} status={message.status}>
-          <h5 className="bp5-heading">{message.error.name}</h5>
+          <h5 className="bp5-heading">{"Something went wrong"}</h5>
           {message.message}
         </NotificationBar>
       )}
