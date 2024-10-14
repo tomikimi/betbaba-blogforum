@@ -29,23 +29,23 @@ function SignUp({ setIsOpen }) {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   function handleName(e) {
-    setName(e.target.value);
+    setName(() => e.target.value);
   }
 
   function handleDisplayName(e) {
-    setDisplayName(e.target.value);
+    setDisplayName(() => e.target.value);
   }
 
   function handleEmail(e) {
-    setEmail(e.target.value);
+    setEmail(() => e.target.value);
   }
 
   function handlePassword(e) {
-    setPassword(e.target.value);
+    setPassword(() => e.target.value);
   }
 
   function handleConfirmPassword(e) {
-    setConfirmPassword(e.target.value);
+    setConfirmPassword(() => e.target.value);
   }
 
   async function handleSubmit(e) {
@@ -73,7 +73,6 @@ function SignUp({ setIsOpen }) {
         console.log("Handle Error");
         setError(true);
         setMessage(result);
-
         return;
       }
       console.log("After no error");
