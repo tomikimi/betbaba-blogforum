@@ -55,3 +55,10 @@
   background-color: #37b44a;
   border: 1px solid #37b44a;
 }
+
+/* media query from 780 */
+@media (max-width: 48.8em) {
+  .section-verification {
+    width: 65rem;
+  }
+}
