@@ -1,5 +1,6 @@
 .section-verification {
   width: 70rem;
+  height: 100vh;
   margin: 6rem auto;
 }
 
@@ -60,5 +61,36 @@
 @media (max-width: 48.8em) {
   .section-verification {
     width: 65rem;
+  }
+}
+
+/* media query from 660 */
+@media (max-width: 41.3em) {
+  .section-verification {
+    width: 59rem;
+  }
+  .emailVerification-paragraph {
+    text-align: center;
+  }
+}
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .section-verification {
+    width: 48rem;
+  }
+}
+
+/* media query from 430 */
+@media (max-width: 25em) {
+  .section-verification {
+    width: 45rem;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 24.4em) {
+  .section-verification {
+    width: 43rem;
   }
 }
