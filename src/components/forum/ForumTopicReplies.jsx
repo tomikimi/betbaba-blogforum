@@ -48,7 +48,6 @@ function ForumTopicReplies() {
   const [comment, setComment] = useState("");
   const { id: forumID } = useParams();
   const token = Cookie.get("user_token");
-  console.log(token);
   const profile = Cookie.get("user_profile");
   const { displayName, _id: userID } = profile
     ? JSON.parse(profile)
@@ -58,13 +57,11 @@ function ForumTopicReplies() {
     function () {
       async function fetchTopicReviews() {
         try {
-          console.log("UseEffect Runs");
           if (token) {
             const res = await axios.get(`${VITE_API_URL}forum/${forumID}`, {
               headers: { Authorization: `Bearer ${token}` },
             });
             const { data } = res.data;
-            console.log(data);
             const val = Number(
               data.forum[0].review.length === 0
                 ? 0
