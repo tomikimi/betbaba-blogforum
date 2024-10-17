@@ -197,6 +197,7 @@
 @media (max-width: 26.9em) {
   .article-container {
     width: 48.9rem;
+    padding: 0rem 1.2rem;
   }
 }
 
@@ -211,6 +212,7 @@
 @media (max-width: 24.4em) {
   .article-container {
     width: 44.5rem;
+    padding: 0rem 1.2rem;
   }
 }
 
