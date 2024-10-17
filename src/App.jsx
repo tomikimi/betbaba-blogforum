@@ -63,6 +63,10 @@ function App() {
               index
               element={<ForumUnreadContent></ForumUnreadContent>}
             ></Route>
+            <Route
+              path="forumReplies/:id"
+              element={<ForumTopicReplies></ForumTopicReplies>}
+            ></Route>
           </Route>
           <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
         </Routes>

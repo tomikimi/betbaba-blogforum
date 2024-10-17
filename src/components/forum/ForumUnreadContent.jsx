@@ -5,6 +5,7 @@ import { Spinner } from "@blueprintjs/core";
 import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import styles from "./forumUnreadContent.module.css";
+import { Link } from "react-router-dom";
 
 const { VITE_API_URL } = import.meta.env;
 
@@ -84,7 +85,12 @@ function ForumUnreadContent() {
                   </div>
                   <div className={styles["reply-details"]}>
                     <span className={styles["unread-content-post"]}>
-                      {topic.title}
+                      <Link
+                        to={`forumReplies/${topic._id}`}
+                        className={styles["unread-content-post"]}
+                      >
+                        {topic.title}
+                      </Link>
                     </span>
                     <p className={styles["reply-data"]}>
                       {topic.createdBy[0].name} Posted a Topic in{" "}
