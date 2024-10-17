@@ -8,7 +8,7 @@ import styles from "./SignUp.module.css";
 
 const { VITE_API_URL } = import.meta.env;
 
-function Login({ setIsOpen, modalName }) {
+function Login({ setIsOpen, modalName, sideBarStatus, handleSideBar }) {
   const [form, setForm] = useState(false);
   const [email, setEmail] = useState("");
   const [resetEmail, setResetEmail] = useState("");
@@ -87,7 +87,6 @@ function Login({ setIsOpen, modalName }) {
         credentials
       );
       setMessage(response.data);
-      console.log("login");
       Cookies.set("user_token", response.data.token, { expires: 5 });
       setEmail("");
       setPassword("");
@@ -113,6 +112,10 @@ function Login({ setIsOpen, modalName }) {
       //   setIsOpen(false);
       // }
       const { pathname } = location;
+      if (response.data.status === "Success" && sideBarStatus === true) {
+        handleSideBar();
+      }
+
       navigate(`${pathname}`);
     } catch (error) {
       setError(true);

@@ -52,7 +52,6 @@ function AppNav() {
   }
 
   function handleSideBar() {
-    console.log(sideBar);
     setSideBar(() => !sideBar);
   }
 
@@ -69,6 +68,9 @@ function AppNav() {
         Cookies.remove("user_token");
         Cookies.remove("user_profile");
         navigate("/");
+        if (sideBar === true) {
+          handleSideBar();
+        }
       }, 3000);
     } catch (error) {
       console.log(error);
@@ -82,7 +84,12 @@ function AppNav() {
           {option === "register" ? (
             <SignUp setIsOpen={setIsOpen}></SignUp>
           ) : (
-            <Login setIsOpen={setIsOpen} modalName={handleModalName}></Login>
+            <Login
+              setIsOpen={setIsOpen}
+              modalName={handleModalName}
+              sideBarStatus={sideBar}
+              handleSideBar={handleSideBar}
+            ></Login>
           )}
         </Modal>
       )}
