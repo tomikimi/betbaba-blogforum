@@ -127,10 +127,10 @@
 /* media query from 1145 */
 @media (max-width: 71.6em) {
   .section-unread-content {
-    width: 96rem;
+    width: 100rem;
   }
   .forum-topic-replies-container {
-    width: 96rem;
+    width: 100rem;
   }
 }
 
@@ -157,10 +157,10 @@
 /* media query from 780 */
 @media (max-width: 48.8em) {
   .section-unread-content {
-    width: 64rem;
+    width: 71rem;
   }
   .forum-topic-replies-container {
-    width: 64rem;
+    width: 71rem;
   }
 
   .reply-details {
@@ -175,10 +175,10 @@
 /* media query from 660 */
 @media (max-width: 41.3em) {
   .section-unread-content {
-    width: 51rem;
+    width: 61rem;
   }
   .forum-topic-replies-container {
-    width: 51rem;
+    width: 61rem;
   }
 
   .reply-details {
@@ -197,6 +197,24 @@
   }
   .forum-topic-replies-container {
     width: 39rem;
+  }
+
+  .reply-details {
+    width: 37rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
+  }
+}
+
+/* media query from 414*/
+@media (max-width: 28em) {
+  .section-unread-content {
+    width: 46.5rem;
+  }
+  .forum-topic-replies-container {
+    width: 46.5rem;
   }
 
   .reply-details {
@@ -228,10 +246,10 @@
 /* media query from 412 */
 @media (max-width: 25.75em) {
   .section-unread-content {
-    width: 39rem;
+    width: 46.5rem;
   }
   .forum-topic-replies-container {
-    width: 39rem;
+    width: 46.5rem;
   }
   .reply-details {
     width: 36rem;
@@ -245,10 +263,10 @@
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .section-unread-content {
-    width: 37rem;
+    width: 43rem;
   }
   .forum-topic-replies-container {
-    width: 37rem;
+    width: 43rem;
   }
   .reply-details {
     width: 34rem;
@@ -262,10 +280,44 @@
 /* media query from 360 */
 @media (max-width: 22.5em) {
   .section-unread-content {
-    width: 33rem;
+    width: 39rem;
   }
   .forum-topic-replies-container {
-    width: 34rem;
+    width: 39rem;
+  }
+  .reply-details {
+    width: 30rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
+  }
+}
+
+/* media query from 360 */
+@media (max-width: 23em) {
+  .section-unread-content {
+    width: 40.5rem;
+  }
+  .forum-topic-replies-container {
+    width: 40.5rem;
+  }
+  .reply-details {
+    width: 30rem;
+    align-items: flex-start;
+  }
+  .reply-time {
+    font-size: 1.3rem;
+  }
+}
+
+/* media query from 344 */
+@media (max-width: 21.5em) {
+  .section-unread-content {
+    width: 38.5rem;
+  }
+  .forum-topic-replies-container {
+    width: 38.5rem;
   }
   .reply-details {
     width: 30rem;
