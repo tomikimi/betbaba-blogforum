@@ -129,7 +129,7 @@
 /* media query from 1145 */
 @media (max-width: 71.6em) {
   .section-profile {
-    width: 96rem;
+    width: 100rem;
   }
 }
 
@@ -154,7 +154,7 @@
 /* media query from 780 */
 @media (max-width: 48.8em) {
   .section-profile {
-    width: 64rem;
+    width: 70rem;
   }
 
   .profile-setting-container {
@@ -167,14 +167,14 @@
 /* media query from 660 */
 @media (max-width: 41.3em) {
   .section-profile {
-    width: 51rem;
+    width: 60rem;
   }
 }
 
 /* media query from 490 */
 @media (max-width: 31em) {
   .section-profile {
-    width: 39rem;
+    width: 46rem;
   }
 }
 
@@ -188,20 +188,20 @@
 /* media query from 412 */
 @media (max-width: 25.75em) {
   .section-profile {
-    width: 39rem;
+    width: 46rem;
   }
 }
 
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .section-profile {
-    width: 37rem;
+    width: 42rem;
   }
 }
 
 /* media query from 360 */
 @media (max-width: 22.5em) {
   .section-profile {
-    width: 33rem;
+    width: 39rem;
   }
 }
