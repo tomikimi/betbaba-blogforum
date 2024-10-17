@@ -71,36 +71,62 @@
 
 /* media query from 1280 */
 @media (max-width: 80em) {
+  .article {
+    padding: 0 4.2rem;
+  }
   .article-container {
-    width: 122rem !important;
+    width: 120rem;
+  }
+}
+
+/* media query from 1180 */
+@media (max-width: 73.6em) {
+  .article {
+    padding: 0 2.2rem;
+  }
+  .article-container {
+    width: 103rem;
   }
 }
 
 /* media query from 1024 */
 @media (max-width: 64em) {
+  .article {
+    padding: 0 4.2rem;
+  }
   .article-container {
-    width: 97rem !important;
+    width: 94rem;
+  }
+}
+
+/* media query from 912 */
+@media (max-width: 57em) {
+  .article {
+    padding: 0rem 2.2rem;
+  }
+  .article-container {
+    width: 87rem;
   }
 }
 
 /* media query from 870 */
 @media (max-width: 54.4em) {
   .article-container {
-    width: 80rem !important;
+    width: 80rem;
   }
 }
 
 /* media query from 853*/
 @media (max-width: 53.3em) {
   .article-container {
-    width: 108rem !important;
+    width: 108rem;
   }
 }
 
 /* media query from 820 */
 @media (max-width: 52em) {
   .article-container {
-    width: 76rem !important;
+    width: 76rem;
   }
 }
 
@@ -129,21 +155,17 @@
 /* media query from 740 */
 @media (max-width: 46.25em) {
   .article-container {
-    width: 68rem !important;
+    width: 68rem;
   }
 }
 
 /* media query from 700 */
 @media (max-width: 43.75em) {
-  .article-container {
-    width: 48rem !important;
+  .article {
+    padding: 0rem 0.4rem;
   }
-}
-
-/* media query from 700 */
-@media (max-width: 25.75em) {
   .article-container {
-    width: 35rem !important;
+    width: 66rem;
   }
 }
 
@@ -152,6 +174,7 @@
   .article {
     display: flex;
     flex-direction: column;
+    padding: 0rem;
   }
   .article-img-box {
     overflow: hidden;
@@ -173,21 +196,28 @@
 /* media query from 430 */
 @media (max-width: 26.9em) {
   .article-container {
-    width: 37rem;
+    width: 48.9rem;
+  }
+}
+
+/* media query from 390 */
+@media (max-width: 25em) {
+  .article-container {
+    width: 45.5rem;
   }
 }
 
 /* media query from 380 */
 @media (max-width: 24.4em) {
   .article-container {
-    width: 32rem;
+    width: 44.5rem;
   }
 }
 
 /* media query from 360 */
 @media (max-width: 23.4em) {
   .article-container {
-    width: 30rem !important;
+    width: 42.5rem;
   }
 
   .article-dateStamp {
@@ -198,7 +228,7 @@
 /* media query from 360 */
 @media (max-width: 21.9em) {
   .article-container {
-    width: 29rem !important;
+    width: 40.5rem;
   }
 
   .article-dateStamp {
