@@ -58,11 +58,11 @@ function ArticleContent() {
                 />
               </div>
               <div className={styles["article-text-box"]}>
-                <h2 className="heading-secondary">{article[0].title}</h2>
-                <p className="paragraph-primary">
+                <h2 className="heading-secondary-md">{article[0].title}</h2>
+                <p className="paragraph-primary-md">
                   written by {article[0].createdBy[0].name}
                 </p>
-                <p className="paragraph-primary">
+                <p className="paragraph-primary-md">
                   {formatDate(article[0].createdAt, "PostTime")}
                 </p>
                 <div className="logo_sm_container">
