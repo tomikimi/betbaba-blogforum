@@ -97,3 +97,17 @@
   margin: 1.5rem 0rem;
   text-align: end;
 }
+
+/* media query from 660 */
+@media (max-width: 41.3em) {
+  .formInput {
+    width: 100%;
+  }
+}
+
+/* media query from 490 */
+@media (max-width: 31em) {
+  .formInput {
+    width: 100%;
+  }
+}
