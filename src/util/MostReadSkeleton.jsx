@@ -1,5 +1,5 @@
 import Skeleton from "react-loading-skeleton";
-import styles from "../components/MostRead.module.css";
+import styles from "../components/mostRead.module.css";
 
 function MostReadSkeleton({ posts }) {
   return Array(posts)
