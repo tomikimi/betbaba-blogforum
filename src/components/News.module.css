@@ -18,6 +18,10 @@
   height: inherit;
 }
 
+.news-content-img-skeleton {
+  height: 100%;
+}
+
 .news-content-text-box {
   position: relative;
   height: 22rem;

@@ -6,6 +6,7 @@ import Footer from "../Footer";
 import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import styles from "./articleContent.module.css";
+import ArticleContentSkeleton from "./ArticleContentSkeleton";
 
 const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
@@ -48,7 +49,10 @@ function ArticleContent() {
       <section className={styles["section-article"]}>
         <div className={styles.article}>
           {article.length === 0 ? (
-            <LoadingContent></LoadingContent>
+            // <LoadingContent></LoadingContent>
+            <ArticleContentSkeleton
+              type={"header-skeleton"}
+            ></ArticleContentSkeleton>
           ) : (
             <>
               <div className={styles["article-img-box"]}>
@@ -78,7 +82,9 @@ function ArticleContent() {
           )}
         </div>
         {article.length === 0 ? (
-          <LoadingContent></LoadingContent>
+          <ArticleContentSkeleton
+            type={"body-skeleton"}
+          ></ArticleContentSkeleton>
         ) : (
           <>
             <div className={styles["article-container"]}>

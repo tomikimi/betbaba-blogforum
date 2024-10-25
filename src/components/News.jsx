@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LoadingContent from "../util/LoadingContent";
 import axios from "axios";
 import styles from "./News.module.css";
+import NewsSkeleton from "./NewsSkeleton";
 
 const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
@@ -26,7 +27,8 @@ function News() {
   return (
     <>
       {articles.length === 0 ? (
-        <LoadingContent></LoadingContent>
+        // <LoadingContent></LoadingContent>
+        <NewsSkeleton news={6}></NewsSkeleton>
       ) : (
         <section className={styles["section-news"]}>
           <div className={`${styles["news-container"]} grid grid--3-cols`}>

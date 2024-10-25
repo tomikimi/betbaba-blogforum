@@ -29,6 +29,7 @@ import axios from "axios";
 // import NotificationBar from "../../util/NotificationBar";
 import NotificationToast from "../../util/NotificationToast";
 import AccountCreationSignIn from "../../util/AccountCreationSignIn";
+import TopicRepliesSkeleton from "./TopicRepliesSkeleton";
 
 const { VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
@@ -218,7 +219,8 @@ function ForumTopicReplies() {
           <div className={styles["forum-topic-replies-container"]}>
             <div className={styles["forum-topic-main-post"]}>
               {replies.length === 0 ? (
-                <Spinner size={18}></Spinner>
+                // <Spinner size={18}></Spinner>
+                <TopicRepliesSkeleton></TopicRepliesSkeleton>
               ) : (
                 <>
                   <h2 className={styles["main-post-header"]}>

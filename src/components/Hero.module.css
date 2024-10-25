@@ -19,6 +19,12 @@
   border-radius: 11px;
 }
 
+.hero-img-skeleton-box {
+  overflow: hidden;
+  border-radius: 11px;
+  height: 100vh;
+}
+
 .hero-img {
   width: 100%;
   height: 100%;

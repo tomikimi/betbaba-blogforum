@@ -7,9 +7,11 @@ import {
   CImage,
 } from "@coreui/react";
 import LoadingContent from "../util/LoadingContent";
+import "react-loading-skeleton/dist/skeleton.css";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import styles from "./Hero.module.css";
 import { Link } from "react-router-dom";
+import HeroSkeleton from "../util/HeroSkeleton";
 
 const { VITE_APP_ENV, VITE_API_URL, VITE_PHOTO_PATH } = import.meta.env;
 
@@ -34,7 +36,8 @@ function Hero() {
   return (
     <>
       {fliers.length === 0 ? (
-        <LoadingContent></LoadingContent>
+        // <LoadingContent></LoadingContent>
+        <HeroSkeleton></HeroSkeleton>
       ) : (
         <section className={styles["section-hero"]}>
           <div className={styles.hero}>

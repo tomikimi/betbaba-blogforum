@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import LoadingContent from "../util/LoadingContent";
 import styles from "./mostRead.module.css";
+import "react-loading-skeleton/dist/skeleton.css";
 import axios from "axios";
+import MostReadSkeleton from "../util/MostReadSkeleton";
 
 const { VITE_API_URL } = import.meta.env;
 
@@ -22,7 +23,7 @@ function MostRead() {
         <h2 className={styles["mostRead-header"]}>Most Read</h2>
         <ul className={styles["mostRead-list"]}>
           {posts.length === 0 ? (
-            <LoadingContent></LoadingContent>
+            <MostReadSkeleton posts={8}></MostReadSkeleton>
           ) : (
             posts.map((post, index) => (
               <>

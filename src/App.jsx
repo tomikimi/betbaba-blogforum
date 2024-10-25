@@ -14,63 +14,67 @@ import PostArticle from "./components/settings/PostArticle";
 import ArticleContent from "./components/forum/ArticleContent";
 import Verification from "./pages/Verification";
 import DiscoverPage from "./pages/DiscoverPage";
+import { SkeletonTheme } from "react-loading-skeleton";
+// import "react-loading-skeleton/dist/skeleton.css";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage></HomePage>}></Route>
-          <Route path="/forum" element={<ForumPage></ForumPage>}>
-            <Route index element={<ForumContent></ForumContent>}></Route>
+      <SkeletonTheme baseColor="#313131" highlightColor="#525252">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage></HomePage>}></Route>
+            <Route path="/forum" element={<ForumPage></ForumPage>}>
+              <Route index element={<ForumContent></ForumContent>}></Route>
+              <Route
+                path="forumReplies/:id"
+                element={<ForumTopicReplies></ForumTopicReplies>}
+              ></Route>
+            </Route>
+            <Route path="/setting" element={<SettingsPage></SettingsPage>}>
+              <Route index element={<Profile></Profile>}></Route>
+              <Route
+                path="emailSetting"
+                element={<EmailSettings></EmailSettings>}
+              ></Route>
+              <Route
+                path="passwordSetting"
+                element={<PasswordSettings></PasswordSettings>}
+              ></Route>
+              <Route
+                path="postArticle"
+                element={<PostArticle></PostArticle>}
+              ></Route>
+            </Route>
             <Route
-              path="forumReplies/:id"
-              element={<ForumTopicReplies></ForumTopicReplies>}
-            ></Route>
-          </Route>
-          <Route path="/setting" element={<SettingsPage></SettingsPage>}>
-            <Route index element={<Profile></Profile>}></Route>
-            <Route
-              path="emailSetting"
-              element={<EmailSettings></EmailSettings>}
-            ></Route>
-            <Route
-              path="passwordSetting"
-              element={<PasswordSettings></PasswordSettings>}
-            ></Route>
-            <Route
-              path="postArticle"
-              element={<PostArticle></PostArticle>}
-            ></Route>
-          </Route>
-          <Route
-            path="resetPassword/:id"
-            element={<ResetPage></ResetPage>}
-          ></Route>
-          <Route
-            path="activateAccount/:id"
-            element={<Verification></Verification>}
-          ></Route>
-          <Route
-            path="/Article/:id"
-            element={<ArticleContent></ArticleContent>}
-          ></Route>
-          <Route
-            path="Discover/unReadContent"
-            element={<DiscoverPage></DiscoverPage>}
-          >
-            <Route
-              index
-              element={<ForumUnreadContent></ForumUnreadContent>}
+              path="resetPassword/:id"
+              element={<ResetPage></ResetPage>}
             ></Route>
             <Route
-              path="forumReplies/:id"
-              element={<ForumTopicReplies></ForumTopicReplies>}
+              path="activateAccount/:id"
+              element={<Verification></Verification>}
             ></Route>
-          </Route>
-          <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
-        </Routes>
-      </BrowserRouter>
+            <Route
+              path="/Article/:id"
+              element={<ArticleContent></ArticleContent>}
+            ></Route>
+            <Route
+              path="Discover/unReadContent"
+              element={<DiscoverPage></DiscoverPage>}
+            >
+              <Route
+                index
+                element={<ForumUnreadContent></ForumUnreadContent>}
+              ></Route>
+              <Route
+                path="forumReplies/:id"
+                element={<ForumTopicReplies></ForumTopicReplies>}
+              ></Route>
+            </Route>
+            <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
+          </Routes>
+        </BrowserRouter>
+      </SkeletonTheme>
       {/* <button className="primaryBtn" onClick={() => setIsOpen(true)}>
         Open Modal
       </button>
