@@ -74,6 +74,42 @@
   padding-left: 0.8rem;
 }
 
+.article-skeleton-time {
+  width: 20rem;
+  height: 5rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  border-radius: 3rem;
+}
+
+.article-skeleton-md-body {
+  width: 57rem;
+  height: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 3rem;
+}
+
+.article-skeleton-lg-body {
+  width: 115rem;
+  height: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 3rem;
+}
+
+/* media query from 1366 */
+@media (max-width: 85.4em) {
+  .article-img-skeleton {
+    height: 15vh;
+  }
+
+  .article-skeleton-md-body {
+    width: 45rem;
+  }
+  .article-skeleton-lg-body {
+    width: 118rem;
+  }
+}
+
 /* media query from 1280 */
 @media (max-width: 80em) {
   .article {
@@ -81,6 +117,13 @@
   }
   .article-container {
     width: 120rem;
+  }
+  .article-img-skeleton {
+    height: 34vh;
+  }
+
+  .article-skeleton-lg-body {
+    width: 113rem;
   }
 }
 
@@ -92,6 +135,16 @@
   .article-container {
     width: 103rem;
   }
+
+  .article-img-skeleton {
+    height: 20vh;
+  }
+  .article-skeleton-md-body {
+    width: 45rem;
+  }
+  .article-skeleton-lg-body {
+    width: 96rem;
+  }
 }
 
 /* media query from 1024 */
@@ -101,6 +154,16 @@
   }
   .article-container {
     width: 94rem;
+  }
+  .article-img-skeleton {
+    height: 44vh;
+  }
+
+  .article-skeleton-md-body {
+    width: 45rem;
+  }
+  .article-skeleton-lg-body {
+    width: 85rem;
   }
 }
 
@@ -133,6 +196,9 @@
   .article-container {
     width: 76rem;
   }
+  .article-img-skeleton {
+    height: 17vh;
+  }
 }
 
 /* media query from 780 */
@@ -155,6 +221,16 @@
   .article-container {
     width: 71rem;
   }
+  .article-img-skeleton {
+    height: 50vh;
+  }
+
+  .article-skeleton-md-body {
+    width: 30rem;
+  }
+  .article-skeleton-lg-body {
+    width: 65rem;
+  }
 }
 
 /* media query from 740 */
@@ -171,6 +247,13 @@
   }
   .article-container {
     width: 66rem;
+  }
+
+  .article-skeleton-md-body {
+    width: 35rem;
+  }
+  .article-skeleton-lg-body {
+    width: 60rem;
   }
 }
 
@@ -196,6 +279,10 @@
   .article-container {
     width: 35rem;
   }
+
+  .article-img-skeleton {
+    height: 50vh;
+  }
 }
 
 /* media query from 430 */
@@ -203,6 +290,16 @@
   .article-container {
     width: 48.9rem;
     padding: 0rem 1.2rem;
+  }
+  .article-img-skeleton {
+    height: 35vh;
+  }
+
+  .article-skeleton-md-body {
+    width: 30rem;
+  }
+  .article-skeleton-lg-body {
+    width: 46rem;
   }
 }
 
@@ -219,6 +316,12 @@
     width: 44.5rem;
     padding: 0rem 1.2rem;
   }
+  .article-skeleton-md-body {
+    width: 30rem;
+  }
+  .article-skeleton-lg-body {
+    width: 42rem;
+  }
 }
 
 /* media query from 360 */
@@ -229,6 +332,13 @@
 
   .article-dateStamp {
     padding: 1rem;
+  }
+
+  .article-skeleton-md-body {
+    width: 25rem;
+  }
+  .article-skeleton-lg-body {
+    width: 38rem;
   }
 }
 
