@@ -220,7 +220,9 @@ function ForumTopicReplies() {
             <div className={styles["forum-topic-main-post"]}>
               {replies.length === 0 ? (
                 // <Spinner size={18}></Spinner>
-                <TopicRepliesSkeleton></TopicRepliesSkeleton>
+                <TopicRepliesSkeleton
+                  type={"topic-header"}
+                ></TopicRepliesSkeleton>
               ) : (
                 <>
                   <h2 className={styles["main-post-header"]}>
@@ -264,9 +266,13 @@ function ForumTopicReplies() {
                 </>
               )}
             </div>
-            <div className={styles["main-post-user-replies"]}>
+            <div className={styles["main-post-user-replies"]} key={0}>
               {replies.length === 0 ? (
-                <Spinner size={18}></Spinner>
+                // <Spinner size={18}></Spinner>
+                <TopicRepliesSkeleton
+                  type={"topic-body"}
+                  post={3}
+                ></TopicRepliesSkeleton>
               ) : (
                 replies.review.map((review) => (
                   <>
@@ -772,7 +778,11 @@ function ForumTopicReplies() {
           </div>
           <div className={styles["post-stats-container"]}>
             {replies.length === 0 ? (
-              <Spinner size={18}></Spinner>
+              // <Spinner size={18}></Spinner>
+              <TopicRepliesSkeleton
+                type={"topic-stat"}
+                post={3}
+              ></TopicRepliesSkeleton>
             ) : (
               <>
                 <div className={styles["post-stat"]}>

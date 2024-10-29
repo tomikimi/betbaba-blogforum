@@ -50,3 +50,73 @@
   cursor: pointer;
   color: #fff;
 }
+
+/* media query from 1336 */
+@media (max-width: 85.4em) {
+  .hero-img-skeleton-box {
+    height: 35vh;
+  }
+}
+
+/* media query from 1270 */
+@media (max-width: 79em) {
+  .hero-img-skeleton-box {
+    height: 55vh;
+  }
+}
+
+/* media query from 1200 */
+@media (max-width: 75em) {
+  .hero-img-skeleton-box {
+    height: 55vh;
+  }
+}
+
+/* media query from 1145 */
+@media (max-width: 71.6em) {
+  .hero-img-skeleton-box {
+    height: 35vh;
+  }
+}
+
+/* media query from 1024 */
+@media (max-width: 64em) {
+  .hero-img-skeleton-box {
+    height: 32vh;
+  }
+}
+
+/* media query from 768 */
+@media (max-width: 48em) {
+  .hero-img-skeleton-box {
+    height: 35vh;
+  }
+}
+
+/* media query from 430 */
+@media (max-width: 26.9em) {
+  .hero-img-skeleton-box {
+    height: 30vh;
+  }
+}
+
+/* media query from 390 */
+@media (max-width: 24.4em) {
+  .hero-img-skeleton-box {
+    height: 30vh;
+  }
+}
+
+/* media query from 380 */
+@media (max-width: 23.8em) {
+  .hero-img-skeleton-box {
+    height: 35vh;
+  }
+}
+
+/* media query from 360 */
+@media (max-width: 22.5em) {
+  .hero-img-skeleton-box {
+    height: 30vh;
+  }
+}

@@ -6,6 +6,7 @@ import axios from "axios";
 import LoadingContent from "../../util/LoadingContent";
 import styles from "./forumUnreadContent.module.css";
 import { Link } from "react-router-dom";
+import ForumUnreadSkeletonContent from "./ForumUnreadSkeletonContent";
 
 const { VITE_API_URL } = import.meta.env;
 
@@ -66,7 +67,8 @@ function ForumUnreadContent() {
     <>
       <section className={styles["section-unread-content"]}>
         {topics.length === 0 ? (
-          <LoadingContent></LoadingContent>
+          // <LoadingContent></LoadingContent>
+          <ForumUnreadSkeletonContent post={4}></ForumUnreadSkeletonContent>
         ) : (
           <div
             className={styles["forum-topic-replies-container"]}

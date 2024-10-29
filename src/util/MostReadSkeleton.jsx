@@ -6,7 +6,7 @@ function MostReadSkeleton({ posts }) {
     .fill(0)
     .map((_, id) => (
       <div className={styles["mostRead-item-skeleton"]} key={id}>
-        <Skeleton></Skeleton>
+        <Skeleton height={40} style={{ marginRight: "1.2rem" }}></Skeleton>
       </div>
     ));
 }

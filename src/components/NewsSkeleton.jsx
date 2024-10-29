@@ -21,14 +21,10 @@ function NewsSkeleton({ news }) {
                 style={{ background: "#fff" }}
               >
                 <Skeleton
-                  count={4}
+                  count={5}
                   baseColor="#c1c1c1"
                   highlightColor="#dcdcdc"
-                  style={{
-                    marginBottom: ".5rem",
-                    padding: "1.2rem",
-                    borderRadius: "1.7rem",
-                  }}
+                  className={styles["news-skeleton"]}
                 />
               </div>
             </div>
