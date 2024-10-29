@@ -74,7 +74,6 @@ function ForumUnreadContent() {
             className={styles["forum-topic-replies-container"]}
             key={topics._id}
           >
-            <ForumUnreadSkeletonContent post={4}></ForumUnreadSkeletonContent>
             {topics.map((topic) => (
               <>
                 <div
