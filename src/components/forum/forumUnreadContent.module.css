@@ -94,6 +94,47 @@
   background: #fff;
 }
 
+.unread-content-circle-skeleton-sm {
+  width: 6rem;
+  height: 6rem;
+}
+
+.unread-content-skeleton-lg {
+  width: 80rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.unread-content-skeleton-md {
+  width: 60rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.unread-content-skeleton-sm {
+  width: 40rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+/* media query from 1366 */
+@media (max-width: 85.4em) {
+  .unread-content-skeleton-lg {
+    width: 119rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 75rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 55rem;
+  }
+}
+
 /* media query from 1280 */
 @media (max-width: 80em) {
   .section-unread-content {
@@ -101,6 +142,17 @@
   }
   .forum-topic-replies-container {
     width: 125rem;
+  }
+  .unread-content-skeleton-lg {
+    width: 114rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 90rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 75rem;
   }
 }
 
@@ -122,6 +174,17 @@
   .forum-topic-replies-container {
     width: 105rem;
   }
+  .unread-content-skeleton-lg {
+    width: 88rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 55rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 35rem;
+  }
 }
 
 /* media query from 1145 */
@@ -131,6 +194,32 @@
   }
   .forum-topic-replies-container {
     width: 100rem;
+  }
+  .unread-content-skeleton-lg {
+    width: 74rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 40rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 25rem;
+  }
+}
+
+/* media query from 1024 */
+@media (max-width: 64em) {
+  .unread-content-skeleton-lg {
+    width: 89rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 55rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 35rem;
   }
 }
 
@@ -152,6 +241,18 @@
   .forum-topic-replies-container {
     width: 74rem;
   }
+
+  .unread-content-skeleton-lg {
+    width: 60rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 40rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 25rem;
+  }
 }
 
 /* media query from 780 */
@@ -169,6 +270,18 @@
   }
   .reply-time {
     font-size: 1.3rem;
+  }
+
+  .unread-content-skeleton-lg {
+    width: 50rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 35rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 15rem;
   }
 }
 
@@ -224,6 +337,18 @@
   .reply-time {
     font-size: 1.3rem;
   }
+
+  .unread-content-skeleton-lg {
+    width: 35rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 25rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 15rem;
+  }
 }
 
 /* media query from 430 */
@@ -275,6 +400,18 @@
   .reply-time {
     font-size: 1.3rem;
   }
+
+  .unread-content-skeleton-lg {
+    width: 32rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 25rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 15rem;
+  }
 }
 
 /* media query from 360 */
@@ -308,6 +445,18 @@
   }
   .reply-time {
     font-size: 1.3rem;
+  }
+
+  .unread-content-skeleton-lg {
+    width: 29rem;
+  }
+
+  .unread-content-skeleton-md {
+    width: 23rem;
+  }
+
+  .unread-content-skeleton-sm {
+    width: 15rem;
   }
 }
 

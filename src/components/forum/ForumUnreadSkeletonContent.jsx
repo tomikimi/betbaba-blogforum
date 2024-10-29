@@ -10,8 +10,7 @@ function ForumUnreadSkeletonContent({ post }) {
             <div className={styles["unread-content-container"]} key={i}>
               <Skeleton
                 circle
-                width={60}
-                height={60}
+                className={styles["unread-content-circle-skeleton-sm"]}
                 baseColor="#c1c1c1"
                 highlightColor="#dcdcdc"
               ></Skeleton>
@@ -19,23 +18,17 @@ function ForumUnreadSkeletonContent({ post }) {
                 <Skeleton
                   baseColor="#c1c1c1"
                   highlightColor="#dcdcdc"
-                  style={{ marginBottom: "1rem", borderRadius: "1rem" }}
-                  width={800}
-                  height={15}
+                  className={styles["unread-content-skeleton-lg"]}
                 ></Skeleton>
                 <Skeleton
                   baseColor="#c1c1c1"
                   highlightColor="#dcdcdc"
-                  style={{ marginBottom: "1rem", borderRadius: "1rem" }}
-                  width={600}
-                  height={15}
+                  className={styles["unread-content-skeleton-md"]}
                 ></Skeleton>
                 <Skeleton
                   baseColor="#c1c1c1"
                   highlightColor="#dcdcdc"
-                  style={{ marginBottom: "1rem", borderRadius: "1rem" }}
-                  width={400}
-                  height={15}
+                  className={styles["unread-content-skeleton-sm"]}
                 ></Skeleton>
               </div>
             </div>
