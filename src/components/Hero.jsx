@@ -42,8 +42,7 @@ function Hero() {
         <section className={styles["section-hero"]}>
           <div className={styles.hero}>
             <CCarousel controls indicators interval={5000}>
-              <HeroSkeleton></HeroSkeleton>
-              {/* {fliers.map((flier) => (
+              {fliers.map((flier) => (
                 <CCarouselItem
                   key={flier.id}
                   className={styles["hero-img-box"]}
@@ -71,7 +70,7 @@ function Hero() {
                     </Link>
                   </CCarouselCaption>
                 </CCarouselItem>
-              ))} */}
+              ))}
             </CCarousel>
             {/* <div className={styles["hero-img-box"]}>
               <img
