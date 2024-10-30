@@ -25,20 +25,19 @@ function MostRead() {
           {posts.length === 0 ? (
             <MostReadSkeleton posts={8}></MostReadSkeleton>
           ) : (
-            <MostReadSkeleton posts={8}></MostReadSkeleton>
-            // posts.map((post, index) => (
-            //   <>
-            //     <li className={styles["mostRead-item"]} key={post._id}>
-            //       <span className={styles["mostRead-number"]}>{index + 1}</span>
-            //       <Link
-            //         to={`forum/forumReplies/${post._id}`}
-            //         className={styles["mostRead-content"]}
-            //       >
-            //         {post.title}
-            //       </Link>
-            //     </li>
-            //   </>
-            // ))
+            posts.map((post, index) => (
+              <>
+                <li className={styles["mostRead-item"]} key={post._id}>
+                  <span className={styles["mostRead-number"]}>{index + 1}</span>
+                  <Link
+                    to={`forum/forumReplies/${post._id}`}
+                    className={styles["mostRead-content"]}
+                  >
+                    {post.title}
+                  </Link>
+                </li>
+              </>
+            ))
           )}
           {/* <li className={styles["mostRead-item"]}>
             <span className={styles["mostRead-number"]}>1</span>
