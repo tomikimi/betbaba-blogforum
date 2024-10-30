@@ -305,6 +305,73 @@
   color: rgba(113, 128, 150);
 }
 
+.topic-reply-skeleton-head-sm {
+  margin-bottom: 1.5rem;
+  border-radius: 3rem;
+}
+
+.topic-reply-skeleton-head-md {
+  width: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 3rem;
+}
+
+.topic-reply-skeleton-head-md2 {
+  width: 30rem;
+  margin-bottom: 1.5rem;
+  border-radius: 3rem;
+}
+
+.topic-reply-skeleton-head-lg {
+  width: 90rem;
+  height: 50rem;
+  border-radius: 1rem;
+}
+
+.topic-reply-skeleton-body-circle {
+  width: 6rem;
+  height: 6rem;
+}
+
+.topic-reply-skeleton-body-lg {
+  width: 80rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.topic-reply-skeleton-body-md {
+  width: 40rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+/* media query from 1366 */
+@media (max-width: 85.4em) {
+  .topic-reply-skeleton-body-lg {
+    width: 79.5rem;
+  }
+  .topic-reply-skeleton-body-md {
+    width: 35rem;
+  }
+}
+
+/* media query from 1280 */
+@media (max-width: 80em) {
+  .section-forum-topic {
+    width: 125rem;
+  }
+
+  .topic-reply-skeleton-body-lg {
+    width: 76.5rem;
+  }
+
+  .topic-reply-skeleton-body-md {
+    width: 40rem;
+  }
+}
+
 /* media query from 1270 */
 @media (max-width: 79em) {
   .section-forum-topic {
@@ -353,6 +420,14 @@
   .user-reply {
     display: grid;
   }
+
+  .topic-reply-skeleton-body-lg {
+    width: 59.5rem;
+  }
+
+  .topic-reply-skeleton-body-md {
+    width: 30rem;
+  }
 }
 
 /* media query from 995 */
@@ -373,6 +448,19 @@
   }
   .user-reply {
     display: grid !important;
+  }
+}
+
+/* media query from 912 */
+@media (max-width: 57em) {
+  .section-forum-topic {
+    width: 85rem;
+  }
+  .topic-reply-skeleton-body-lg {
+    width: 73.5rem;
+  }
+  .topic-reply-skeleton-body-md {
+    width: 35rem;
   }
 }
 
@@ -458,6 +546,22 @@
   .reply-info-responsive {
     display: none !important;
   }
+
+  .topic-reply-skeleton-head-md {
+    width: 20rem;
+  }
+
+  .topic-reply-skeleton-head-md2 {
+    width: 30rem;
+  }
+
+  .topic-reply-skeleton-head-lg {
+    width: 68rem;
+  }
+
+  .topic-reply-skeleton-body-lg {
+    width: 59.5rem;
+  }
 }
 
 /* media query from 660 */
@@ -534,6 +638,25 @@
   }
 }
 
+/* media query from 540 */
+@media (max-width: 33.8em) {
+  .topic-reply-skeleton-head-sm {
+    width: 39.8rem;
+  }
+
+  .topic-reply-skeleton-head-lg {
+    width: 58rem;
+  }
+
+  .topic-reply-skeleton-body-lg {
+    width: 49.5rem;
+  }
+
+  .topic-reply-skeleton-body-md {
+    width: 25rem;
+  }
+}
+
 /* media query from 490 */
 @media (max-width: 31em) {
   .section-forum-topic {
@@ -602,6 +725,25 @@
 
   .reply-info-responsive {
     display: none !important;
+  }
+
+  .topic-reply-skeleton-head-lg {
+    width: 44rem;
+  }
+
+  .topic-reply-skeleton-body-lg {
+    width: 36rem;
+  }
+
+  .topic-reply-skeleton-body-md {
+    width: 20rem;
+  }
+}
+
+/* media query from 414 */
+@media (max-width: 25.9em) {
+  .topic-reply-skeleton-head-lg {
+    width: 44rem;
   }
 }
 
@@ -673,6 +815,14 @@
 
   .reply-info-responsive {
     display: none !important;
+  }
+
+  .topic-reply-skeleton-head-sm {
+    width: 43.8rem;
+  }
+
+  .topic-reply-skeleton-head-lg {
+    width: 44rem;
   }
 }
 
@@ -746,6 +896,10 @@
   .reply-info-responsive {
     display: none !important;
   }
+
+  .topic-reply-skeleton-head-sm {
+    width: 43.8rem;
+  }
 }
 
 /* media query from 380 */
@@ -816,6 +970,18 @@
 
   .reply-info-responsive {
     display: none !important;
+  }
+
+  .topic-reply-skeleton-head-lg {
+    width: 40rem;
+  }
+
+  .topic-reply-skeleton-body-lg {
+    width: 31rem;
+  }
+
+  .topic-reply-skeleton-body-md {
+    width: 20rem;
   }
 }
 
@@ -888,6 +1054,22 @@
   .reply-info-responsive {
     display: none !important;
   }
+
+  .topic-reply-skeleton-head-sm {
+    width: 37.8rem;
+  }
+
+  .topic-reply-skeleton-head-lg {
+    width: 38rem;
+  }
+
+  .topic-reply-skeleton-body-lg {
+    width: 29rem;
+  }
+
+  .topic-reply-skeleton-body-md {
+    width: 18rem;
+  }
 }
 
 /* media query from 344 */
@@ -909,5 +1091,29 @@
 
   .reply-comments {
     margin-bottom: 2rem;
+  }
+
+  .topic-reply-skeleton-head-sm {
+    width: 35.5rem;
+  }
+
+  .topic-reply-skeleton-head-md {
+    width: 20rem;
+  }
+
+  .topic-reply-skeleton-head-md2 {
+    width: 25rem;
+  }
+
+  .topic-reply-skeleton-head-lg {
+    width: 35.5rem;
+  }
+
+  .topic-reply-skeleton-body-lg {
+    width: 27.5rem;
+  }
+
+  .topic-reply-skeleton-body-md {
+    width: 15rem;
   }
 }

@@ -274,343 +274,347 @@ function ForumTopicReplies() {
                   post={3}
                 ></TopicRepliesSkeleton>
               ) : (
-                replies.review.map((review) => (
-                  <>
-                    <div className={styles["user-reply-container-mobile"]}>
-                      <div className={styles["user-reply-info-mobile"]}>
-                        <div className={styles["reply-info"]}>
-                          <div className={styles["reply-user-content"]}>
-                            <span className={styles["reply-user-letter"]}>
-                              {getFirstLetter(review.postBy[0].displayName)}
-                            </span>
-                          </div>
-                        </div>
-                        <div className={styles["reply-details"]}>
-                          <span
-                            className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-1"]}`}
-                          >
-                            {review.postBy[0].displayName}
-                          </span>
-                          <span className={styles["reply-time"]}>
-                            Posted on {formatDate(review.createdAt, "PostTime")}
-                          </span>
-                        </div>
-                      </div>
-                      <div>
-                        <p
-                          className={styles["reply-data"]}
-                          dangerouslySetInnerHTML={{
-                            __html: parse(review.review),
-                          }}
-                        ></p>
-                        <div className={styles["reply-comments"]}>
-                          <span
-                            className={styles["reply-time"]}
-                            onClick={() =>
-                              handleOpenComment(review._id, openComment)
-                            }
-                          >
-                            {review.comment.length} Replies
-                          </span>
-                          <button
-                            className={`${styles["reply-button"]} mg-t-3`}
-                            onClick={() =>
-                              handleOpenThread(review._id, openThreadCtrl)
-                            }
-                          >
-                            Reply
-                          </button>
-                        </div>
-                        {openComment && openCommentID === review._id && (
-                          <div className={styles["reply-comment-container"]}>
-                            {review.comment.map((comment) => (
-                              <div
-                                className={`${styles["main-post-user-replies"]} ${styles["main-post-user-replies-mobile"]}`}
-                                key={comment._id}
-                              >
-                                <div className={styles["comment-reply"]}>
-                                  <div className={styles["reply-comment-info"]}>
-                                    <div
-                                      className={styles["reply-user-content"]}
-                                    >
-                                      <span
-                                        className={
-                                          styles["comment-user-letter"]
-                                        }
-                                      >
-                                        {getFirstLetter(
-                                          `${comment.postBy[0].displayName}`
-                                        )}
-                                      </span>
-                                    </div>
-                                    <div
-                                      className={
-                                        styles["main-post-user-details"]
-                                      }
-                                    >
-                                      <span
-                                        className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-2"]}`}
-                                      >
-                                        {comment.postBy[0].displayName}
-                                      </span>
-                                      <span className={styles["reply-time"]}>
-                                        Posted on{" "}
-                                        {formatDate(
-                                          review.comment[0].createdAt,
-                                          "ReplyTimeMobile"
-                                        )}
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div className={styles["reply-details"]}>
-                                    <p
-                                      className={styles["reply-data"]}
-                                      dangerouslySetInnerHTML={{
-                                        __html: parse(comment.comment),
-                                      }}
-                                    ></p>
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                        {openThreadCtrl && openThreadID === review._id && (
-                          <>
-                            <div className={styles["reply-comment-container"]}>
-                              <CKEditor
-                                key={review._id}
-                                editor={ClassicEditor}
-                                data={comment}
-                                onChange={(event, editor) => {
-                                  const data = editor.getData();
-                                  setComment(data);
-                                }}
-                                className="ck-editor__editable_inline"
-                                config={{
-                                  toolbar: {
-                                    items: [
-                                      "undo",
-                                      "redo",
-                                      "|",
-                                      "bold",
-                                      "italic",
-                                      "underline",
-                                      "strikethrough",
-                                      "|",
-                                      "subscript",
-                                      "superscript",
-                                      "|",
-                                      "alignment",
-                                      "|",
-                                      "indent",
-                                      "|",
-                                      "bulletedList",
-                                      "numberedList",
-                                    ],
-                                  },
-                                  plugins: [
-                                    Bold,
-                                    Essentials,
-                                    Italic,
-                                    Mention,
-                                    Paragraph,
-                                    Undo,
-                                    Underline,
-                                    Strikethrough,
-                                    Subscript,
-                                    Superscript,
-                                    Alignment,
-                                    Indent,
-                                    List,
-                                  ],
-                                  licenseKey: "<YOUR_LICENSE_KEY>",
-                                  mention: {
-                                    // Mention configuration
-                                  },
-                                  initialData: "",
-                                }}
-                              />
-                              <button
-                                type="submit"
-                                className={`${styles["reply-button"]} mg-t-3`}
-                                onClick={handleCommentSubmit}
-                              >
-                                {isLoading ? (
-                                  <Spinner size={18}></Spinner>
-                                ) : (
-                                  `Comment`
-                                )}
-                              </button>
-                            </div>
-                          </>
-                        )}
-                      </div>
-                    </div>
-                    <div className={styles["user-reply"]} key={review._id}>
-                      <div className={styles["reply-info"]}>
-                        <span
-                          className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-1"]}`}
-                        >
-                          {review.postBy[0].displayName}
-                        </span>
-                        <div className={styles["reply-user-content"]}>
-                          <span className={styles["reply-user-letter"]}>
-                            {getFirstLetter(review.postBy[0].displayName)}
-                          </span>
-                        </div>
-                      </div>
-                      <div className={styles["reply-details"]}>
-                        <span className={styles["reply-time"]}>
-                          Posted on {formatDate(review.createdAt, "PostTime")}
-                        </span>
-                        <p
-                          className={styles["reply-data"]}
-                          dangerouslySetInnerHTML={{
-                            __html: parse(review.review),
-                          }}
-                        ></p>
-                        <div className={styles["reply-comments"]}>
-                          <span
-                            className={styles["reply-time"]}
-                            onClick={() =>
-                              handleOpenComment(review._id, openComment)
-                            }
-                          >
-                            {review.comment.length} Replies
-                          </span>
-                          <button
-                            className={`${styles["reply-button"]} mg-t-3`}
-                            onClick={() =>
-                              handleOpenThread(review._id, openThreadCtrl)
-                            }
-                          >
-                            Reply
-                          </button>
-                        </div>
-                        {openComment && openCommentID === review._id && (
-                          <div className={styles["reply-comment-container"]}>
-                            {review.comment.map((comment) => (
-                              <div
-                                className={styles["main-post-user-replies"]}
-                                key={comment._id}
-                              >
-                                <div className={styles["comment-reply"]}>
-                                  <div className={styles["reply-info"]}>
-                                    <span
-                                      className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-2"]}`}
-                                    >
-                                      {comment.postBy[0].displayName}
-                                    </span>
-                                    <div
-                                      className={styles["reply-user-content"]}
-                                    >
-                                      <span
-                                        className={
-                                          styles["comment-user-letter"]
-                                        }
-                                      >
-                                        {getFirstLetter(
-                                          `${comment.postBy[0].displayName}`
-                                        )}
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div className={styles["reply-details"]}>
-                                    <span className={styles["reply-time"]}>
-                                      Posted on{" "}
-                                      {formatDate(
-                                        review.comment[0].createdAt,
-                                        "PostTime"
-                                      )}
-                                    </span>
-                                    <p
-                                      className={styles["reply-data"]}
-                                      dangerouslySetInnerHTML={{
-                                        __html: parse(comment.comment),
-                                      }}
-                                    ></p>
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        )}
+                <TopicRepliesSkeleton
+                  type={"topic-body"}
+                  post={3}
+                ></TopicRepliesSkeleton>
+                // replies.review.map((review) => (
+                //   <>
+                //     <div className={styles["user-reply-container-mobile"]}>
+                //       <div className={styles["user-reply-info-mobile"]}>
+                //         <div className={styles["reply-info"]}>
+                //           <div className={styles["reply-user-content"]}>
+                //             <span className={styles["reply-user-letter"]}>
+                //               {getFirstLetter(review.postBy[0].displayName)}
+                //             </span>
+                //           </div>
+                //         </div>
+                //         <div className={styles["reply-details"]}>
+                //           <span
+                //             className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-1"]}`}
+                //           >
+                //             {review.postBy[0].displayName}
+                //           </span>
+                //           <span className={styles["reply-time"]}>
+                //             Posted on {formatDate(review.createdAt, "PostTime")}
+                //           </span>
+                //         </div>
+                //       </div>
+                //       <div>
+                //         <p
+                //           className={styles["reply-data"]}
+                //           dangerouslySetInnerHTML={{
+                //             __html: parse(review.review),
+                //           }}
+                //         ></p>
+                //         <div className={styles["reply-comments"]}>
+                //           <span
+                //             className={styles["reply-time"]}
+                //             onClick={() =>
+                //               handleOpenComment(review._id, openComment)
+                //             }
+                //           >
+                //             {review.comment.length} Replies
+                //           </span>
+                //           <button
+                //             className={`${styles["reply-button"]} mg-t-3`}
+                //             onClick={() =>
+                //               handleOpenThread(review._id, openThreadCtrl)
+                //             }
+                //           >
+                //             Reply
+                //           </button>
+                //         </div>
+                //         {openComment && openCommentID === review._id && (
+                //           <div className={styles["reply-comment-container"]}>
+                //             {review.comment.map((comment) => (
+                //               <div
+                //                 className={`${styles["main-post-user-replies"]} ${styles["main-post-user-replies-mobile"]}`}
+                //                 key={comment._id}
+                //               >
+                //                 <div className={styles["comment-reply"]}>
+                //                   <div className={styles["reply-comment-info"]}>
+                //                     <div
+                //                       className={styles["reply-user-content"]}
+                //                     >
+                //                       <span
+                //                         className={
+                //                           styles["comment-user-letter"]
+                //                         }
+                //                       >
+                //                         {getFirstLetter(
+                //                           `${comment.postBy[0].displayName}`
+                //                         )}
+                //                       </span>
+                //                     </div>
+                //                     <div
+                //                       className={
+                //                         styles["main-post-user-details"]
+                //                       }
+                //                     >
+                //                       <span
+                //                         className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-2"]}`}
+                //                       >
+                //                         {comment.postBy[0].displayName}
+                //                       </span>
+                //                       <span className={styles["reply-time"]}>
+                //                         Posted on{" "}
+                //                         {formatDate(
+                //                           review.comment[0].createdAt,
+                //                           "ReplyTimeMobile"
+                //                         )}
+                //                       </span>
+                //                     </div>
+                //                   </div>
+                //                   <div className={styles["reply-details"]}>
+                //                     <p
+                //                       className={styles["reply-data"]}
+                //                       dangerouslySetInnerHTML={{
+                //                         __html: parse(comment.comment),
+                //                       }}
+                //                     ></p>
+                //                   </div>
+                //                 </div>
+                //               </div>
+                //             ))}
+                //           </div>
+                //         )}
+                //         {openThreadCtrl && openThreadID === review._id && (
+                //           <>
+                //             <div className={styles["reply-comment-container"]}>
+                //               <CKEditor
+                //                 key={review._id}
+                //                 editor={ClassicEditor}
+                //                 data={comment}
+                //                 onChange={(event, editor) => {
+                //                   const data = editor.getData();
+                //                   setComment(data);
+                //                 }}
+                //                 className="ck-editor__editable_inline"
+                //                 config={{
+                //                   toolbar: {
+                //                     items: [
+                //                       "undo",
+                //                       "redo",
+                //                       "|",
+                //                       "bold",
+                //                       "italic",
+                //                       "underline",
+                //                       "strikethrough",
+                //                       "|",
+                //                       "subscript",
+                //                       "superscript",
+                //                       "|",
+                //                       "alignment",
+                //                       "|",
+                //                       "indent",
+                //                       "|",
+                //                       "bulletedList",
+                //                       "numberedList",
+                //                     ],
+                //                   },
+                //                   plugins: [
+                //                     Bold,
+                //                     Essentials,
+                //                     Italic,
+                //                     Mention,
+                //                     Paragraph,
+                //                     Undo,
+                //                     Underline,
+                //                     Strikethrough,
+                //                     Subscript,
+                //                     Superscript,
+                //                     Alignment,
+                //                     Indent,
+                //                     List,
+                //                   ],
+                //                   licenseKey: "<YOUR_LICENSE_KEY>",
+                //                   mention: {
+                //                     // Mention configuration
+                //                   },
+                //                   initialData: "",
+                //                 }}
+                //               />
+                //               <button
+                //                 type="submit"
+                //                 className={`${styles["reply-button"]} mg-t-3`}
+                //                 onClick={handleCommentSubmit}
+                //               >
+                //                 {isLoading ? (
+                //                   <Spinner size={18}></Spinner>
+                //                 ) : (
+                //                   `Comment`
+                //                 )}
+                //               </button>
+                //             </div>
+                //           </>
+                //         )}
+                //       </div>
+                //     </div>
+                //     <div className={styles["user-reply"]} key={review._id}>
+                //       <div className={styles["reply-info"]}>
+                //         <span
+                //           className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-1"]}`}
+                //         >
+                //           {review.postBy[0].displayName}
+                //         </span>
+                //         <div className={styles["reply-user-content"]}>
+                //           <span className={styles["reply-user-letter"]}>
+                //             {getFirstLetter(review.postBy[0].displayName)}
+                //           </span>
+                //         </div>
+                //       </div>
+                //       <div className={styles["reply-details"]}>
+                //         <span className={styles["reply-time"]}>
+                //           Posted on {formatDate(review.createdAt, "PostTime")}
+                //         </span>
+                //         <p
+                //           className={styles["reply-data"]}
+                //           dangerouslySetInnerHTML={{
+                //             __html: parse(review.review),
+                //           }}
+                //         ></p>
+                //         <div className={styles["reply-comments"]}>
+                //           <span
+                //             className={styles["reply-time"]}
+                //             onClick={() =>
+                //               handleOpenComment(review._id, openComment)
+                //             }
+                //           >
+                //             {review.comment.length} Replies
+                //           </span>
+                //           <button
+                //             className={`${styles["reply-button"]} mg-t-3`}
+                //             onClick={() =>
+                //               handleOpenThread(review._id, openThreadCtrl)
+                //             }
+                //           >
+                //             Reply
+                //           </button>
+                //         </div>
+                //         {openComment && openCommentID === review._id && (
+                //           <div className={styles["reply-comment-container"]}>
+                //             {review.comment.map((comment) => (
+                //               <div
+                //                 className={styles["main-post-user-replies"]}
+                //                 key={comment._id}
+                //               >
+                //                 <div className={styles["comment-reply"]}>
+                //                   <div className={styles["reply-info"]}>
+                //                     <span
+                //                       className={`${styles["main-post-user"]} ${styles["txt-align"]} ${styles["post-sz-2"]}`}
+                //                     >
+                //                       {comment.postBy[0].displayName}
+                //                     </span>
+                //                     <div
+                //                       className={styles["reply-user-content"]}
+                //                     >
+                //                       <span
+                //                         className={
+                //                           styles["comment-user-letter"]
+                //                         }
+                //                       >
+                //                         {getFirstLetter(
+                //                           `${comment.postBy[0].displayName}`
+                //                         )}
+                //                       </span>
+                //                     </div>
+                //                   </div>
+                //                   <div className={styles["reply-details"]}>
+                //                     <span className={styles["reply-time"]}>
+                //                       Posted on{" "}
+                //                       {formatDate(
+                //                         review.comment[0].createdAt,
+                //                         "PostTime"
+                //                       )}
+                //                     </span>
+                //                     <p
+                //                       className={styles["reply-data"]}
+                //                       dangerouslySetInnerHTML={{
+                //                         __html: parse(comment.comment),
+                //                       }}
+                //                     ></p>
+                //                   </div>
+                //                 </div>
+                //               </div>
+                //             ))}
+                //           </div>
+                //         )}
 
-                        {openThreadCtrl && openThreadID === review._id && (
-                          <>
-                            <div className={styles["reply-comment-container"]}>
-                              <CKEditor
-                                key={review._id}
-                                editor={ClassicEditor}
-                                data={comment}
-                                onChange={(event, editor) => {
-                                  const data = editor.getData();
-                                  setComment(data);
-                                }}
-                                className="ck-editor__editable_inline"
-                                config={{
-                                  toolbar: {
-                                    items: [
-                                      "undo",
-                                      "redo",
-                                      "|",
-                                      "bold",
-                                      "italic",
-                                      "underline",
-                                      "strikethrough",
-                                      "|",
-                                      "subscript",
-                                      "superscript",
-                                      "|",
-                                      "alignment",
-                                      "|",
-                                      "indent",
-                                      "|",
-                                      "bulletedList",
-                                      "numberedList",
-                                    ],
-                                  },
-                                  plugins: [
-                                    Bold,
-                                    Essentials,
-                                    Italic,
-                                    Mention,
-                                    Paragraph,
-                                    Undo,
-                                    Underline,
-                                    Strikethrough,
-                                    Subscript,
-                                    Superscript,
-                                    Alignment,
-                                    Indent,
-                                    List,
-                                  ],
-                                  licenseKey: "<YOUR_LICENSE_KEY>",
-                                  mention: {
-                                    // Mention configuration
-                                  },
-                                  initialData: "",
-                                }}
-                              />
-                              <button
-                                type="submit"
-                                className={`${styles["reply-button"]} mg-t-3`}
-                                onClick={handleCommentSubmit}
-                              >
-                                {isLoading ? (
-                                  <Spinner size={18}></Spinner>
-                                ) : (
-                                  `Comment`
-                                )}
-                              </button>
-                            </div>
-                          </>
-                        )}
-                      </div>
-                    </div>
-                  </>
-                ))
+                //         {openThreadCtrl && openThreadID === review._id && (
+                //           <>
+                //             <div className={styles["reply-comment-container"]}>
+                //               <CKEditor
+                //                 key={review._id}
+                //                 editor={ClassicEditor}
+                //                 data={comment}
+                //                 onChange={(event, editor) => {
+                //                   const data = editor.getData();
+                //                   setComment(data);
+                //                 }}
+                //                 className="ck-editor__editable_inline"
+                //                 config={{
+                //                   toolbar: {
+                //                     items: [
+                //                       "undo",
+                //                       "redo",
+                //                       "|",
+                //                       "bold",
+                //                       "italic",
+                //                       "underline",
+                //                       "strikethrough",
+                //                       "|",
+                //                       "subscript",
+                //                       "superscript",
+                //                       "|",
+                //                       "alignment",
+                //                       "|",
+                //                       "indent",
+                //                       "|",
+                //                       "bulletedList",
+                //                       "numberedList",
+                //                     ],
+                //                   },
+                //                   plugins: [
+                //                     Bold,
+                //                     Essentials,
+                //                     Italic,
+                //                     Mention,
+                //                     Paragraph,
+                //                     Undo,
+                //                     Underline,
+                //                     Strikethrough,
+                //                     Subscript,
+                //                     Superscript,
+                //                     Alignment,
+                //                     Indent,
+                //                     List,
+                //                   ],
+                //                   licenseKey: "<YOUR_LICENSE_KEY>",
+                //                   mention: {
+                //                     // Mention configuration
+                //                   },
+                //                   initialData: "",
+                //                 }}
+                //               />
+                //               <button
+                //                 type="submit"
+                //                 className={`${styles["reply-button"]} mg-t-3`}
+                //                 onClick={handleCommentSubmit}
+                //               >
+                //                 {isLoading ? (
+                //                   <Spinner size={18}></Spinner>
+                //                 ) : (
+                //                   `Comment`
+                //                 )}
+                //               </button>
+                //             </div>
+                //           </>
+                //         )}
+                //       </div>
+                //     </div>
+                //   </>
+                // ))
               )}
 
               <form

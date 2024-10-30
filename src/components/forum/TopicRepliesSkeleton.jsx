@@ -9,38 +9,25 @@ function TopicRepliesSkeleton({ type, post }) {
           <Skeleton
             baseColor="#c1c1c1"
             highlightColor="#dcdcdc"
-            style={{
-              marginBottom: "1.5rem",
-              borderRadius: "3rem",
-            }}
+            className={styles["topic-reply-skeleton-head-sm"]}
           ></Skeleton>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div className={styles["main-post-timeline"]}>
             <Skeleton
               baseColor="#c1c1c1"
               highlightColor="#dcdcdc"
-              width={200}
-              style={{
-                marginBottom: "1rem",
-                borderRadius: "3rem",
-              }}
+              className={styles["topic-reply-skeleton-head-md"]}
             ></Skeleton>
             <Skeleton
               baseColor="#c1c1c1"
               highlightColor="#dcdcdc"
-              width={400}
-              style={{
-                marginBottom: "1.5rem",
-                borderRadius: "3rem",
-              }}
+              className={styles["topic-reply-skeleton-head-md2"]}
             ></Skeleton>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Skeleton
               baseColor="#c1c1c1"
               highlightColor="#dcdcdc"
-              width={900}
-              height={500}
-              style={{ borderRadius: "1rem" }}
+              className={styles["topic-reply-skeleton-head-lg"]}
             ></Skeleton>
           </div>
         </div>
@@ -53,25 +40,20 @@ function TopicRepliesSkeleton({ type, post }) {
               <div className={styles["skeleton-user-reply"]}>
                 <Skeleton
                   circle
-                  width={60}
-                  height={60}
+                  className={styles["topic-reply-skeleton-body-circle"]}
                   baseColor="#c1c1c1"
                   highlightColor="#dcdcdc"
                 ></Skeleton>
                 <div>
                   <Skeleton
                     count={3}
-                    style={{ marginBottom: "1rem", borderRadius: "1rem" }}
-                    width={800}
-                    height={15}
+                    className={styles["topic-reply-skeleton-body-lg"]}
                     baseColor="#c1c1c1"
                     highlightColor="#dcdcdc"
                   ></Skeleton>
                   <Skeleton
                     count={2}
-                    style={{ marginBottom: "1rem", borderRadius: "1rem" }}
-                    width={400}
-                    height={15}
+                    className={styles["topic-reply-skeleton-body-md"]}
                     baseColor="#c1c1c1"
                     highlightColor="#dcdcdc"
                   ></Skeleton>
