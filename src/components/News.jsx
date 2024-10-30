@@ -46,7 +46,14 @@ function News() {
                 </Link>
                 <div className={styles["news-content-text-box"]}>
                   <span className="span-label">{article.type}</span>
-                  <p className="paragraph-primary">{article.title}</p>
+                  <p className="paragraph-primary">
+                    <Link
+                      className={styles["news-article-link"]}
+                      to={`/Article/${article._id}`}
+                    >
+                      {article.title}
+                    </Link>
+                  </p>
                   <div className={styles["news_logo_sm_container"]}>
                     <img
                       src="/logo/betbaba_logo_sm.PNG"

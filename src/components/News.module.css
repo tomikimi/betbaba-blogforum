@@ -25,8 +25,14 @@
 .news-skeleton {
   margin-bottom: 1rem;
   border-radius: 1rem;
-  width: 39.5rem;
+  width: 36.5rem;
   height: 1.5rem;
+}
+
+.news-article-link:link,
+.news-article-link:visited {
+  text-decoration: none;
+  color: #fff;
 }
 
 .news-content-text-box {
