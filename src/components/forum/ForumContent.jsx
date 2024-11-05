@@ -30,6 +30,7 @@ function ForumContent() {
       try {
         const res = await axios.get(`${VITE_API_URL}forum/forumReviewStats`);
         const { data } = res;
+        // console.log(data);
         setTopicReview(() => data);
       } catch (err) {
         console.log(err);
@@ -127,20 +128,20 @@ function ForumContent() {
               <li className={styles["forum-stat-listItem"]}>
                 <span className={styles["stat-tag"]}>Total Topics</span>
                 <span className={styles["stat-figure"]}>
-                  {topicReview.length === 0 ? (
+                  {topicReview?.length === 0 ? (
                     <Spinner size={18}></Spinner>
                   ) : (
-                    topicReview.topic[0].totalTopics
+                    topicReview?.topic[0]?.totalTopics
                   )}
                 </span>
               </li>
               <li className={styles["forum-stat-listItem"]}>
                 <span className={styles["stat-tag"]}>Total Posts</span>
                 <span className={styles["stat-figure"]}>
-                  {topicReview.length === 0 ? (
+                  {topicReview?.length === 0 ? (
                     <Spinner size={18}></Spinner>
                   ) : (
-                    topicReview.review[0].totalReviews
+                    topicReview?.review[0]?.totalReviews
                   )}
                 </span>
               </li>
@@ -154,10 +155,10 @@ function ForumContent() {
               <li className={styles["forum-stat-listItem"]}>
                 <span className={styles["stat-tag"]}>Total Members</span>
                 <span className={styles["stat-figure"]}>
-                  {userStats.length === 0 ? (
+                  {userStats?.length === 0 ? (
                     <Spinner size={18}></Spinner>
                   ) : (
-                    userStats.users[0].totalUsers
+                    userStats?.users[0]?.totalUsers
                   )}
                 </span>
               </li>
@@ -165,10 +166,10 @@ function ForumContent() {
                 <span className={styles["stat-tag"]}>Newest Member</span>
                 <span className={styles["stat-figure"]}>
                   {" "}
-                  {userStats.length === 0 ? (
+                  {userStats?.length === 0 ? (
                     <Spinner size={18}></Spinner>
                   ) : (
-                    userStats.member[0].displayName
+                    userStats?.member[0]?.displayName
                   )}
                 </span>
               </li>
