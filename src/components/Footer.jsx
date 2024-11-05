@@ -1,5 +1,6 @@
 import { SocialIcon } from "react-social-icons";
 import styles from "./footer.module.css";
+import { NavLink, Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -44,24 +45,32 @@ function Footer() {
           <div className={styles["footer-links"]}>
             <ul className={styles["footer-link-container"]}>
               <li className={styles["footer-list-tag"]}>
-                <a className={styles["footer-link"]} href="#">
+                <NavLink to="/" className={styles["footer-link"]}>
                   Blog
-                </a>
+                </NavLink>
               </li>
               <li className={styles["footer-list-tag"]}>
-                <a className={styles["footer-link"]} href="#">
+                <NavLink to="/forum" className={styles["footer-link"]}>
                   Forum
-                </a>
+                </NavLink>
               </li>
               <li className={styles["footer-list-tag"]}>
-                <a className={styles["footer-link"]} href="#">
+                <Link
+                  to="https://www.betbaba.ng/en/sports/pre-match/event-view"
+                  target="_blank"
+                  className={styles["footer-link"]}
+                >
                   SportsBook
-                </a>
+                </Link>
               </li>
               <li className={styles["footer-list-tag"]}>
-                <a className={styles["footer-link"]} href="#">
+                <Link
+                  to="https://www.betbaba.ng/en/virtual-sports/betconstruct"
+                  target="_blank"
+                  className={styles["footer-link"]}
+                >
                   Virtual
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
