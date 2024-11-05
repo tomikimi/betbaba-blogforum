@@ -176,44 +176,53 @@ function ForumContent() {
             </ul>
           </div>
           <div>
-            <a href="#">
+            <Link to="https://t.me/+gMeMOpgX311jNGNk" target="_blank">
               <img
                 src="/promo/telegram_banner.png"
                 alt="betbaba telegram channel"
                 loading="lazy"
                 className={styles["forum-social-icon"]}
               />
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="#">
+            <Link
+              to="https://instagram.com/betbaba_ng?igshid=MzNlNGNkZWQ4Mg=="
+              target="_blank"
+            >
               <img
                 src="/promo/instagram_banner.png"
                 alt="betbaba instagram channel"
                 loading="lazy"
                 className={styles["forum-social-icon"]}
               />
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="#">
+            <Link
+              to="https://youtube.com/@Betbaba_Ng?si=pzNMKBScGIwLYu59"
+              target="_blank"
+            >
               <img
                 src="/promo/youtube_banner.png"
                 alt="betbaba youtube channel"
                 loading="lazy"
                 className={styles["forum-social-icon"]}
               />
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="#">
+            <Link
+              to="https://www.facebook.com/profile.php?id=61550779080161&mibextid=ZbWKwL"
+              target="_blank"
+            >
               <img
                 src="/promo/facebook_banner.png"
                 alt="betbaba facebook channel"
                 loading="lazy"
                 className={styles["forum-social-icon"]}
               />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

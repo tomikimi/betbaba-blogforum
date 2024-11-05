@@ -15,23 +15,28 @@ function Footer() {
             <div className={styles["footer-icon-container"]}>
               <SocialIcon
                 style={{ width: "25px", height: "25px" }}
-                url="https://instagram.com"
+                url="https://instagram.com/betbaba_ng?igshid=MzNlNGNkZWQ4Mg=="
+                target="_blank"
               ></SocialIcon>
               <SocialIcon
                 style={{ width: "25px", height: "25px" }}
-                url="https://facebook.com"
+                url="https://www.facebook.com/profile.php?id=61550779080161&mibextid=ZbWKwL"
+                target="_blank"
               ></SocialIcon>
               <SocialIcon
                 style={{ width: "25px", height: "25px" }}
-                url="https://x.com"
+                url="https://x.com/Betbaba_ng?t=zivMTakNfNLue77pfZqRZA&s=09"
+                target="_blank"
               ></SocialIcon>
               <SocialIcon
                 style={{ width: "25px", height: "25px" }}
-                url="https://youtube.com"
+                url="https://youtube.com/@Betbaba_Ng?si=pzNMKBScGIwLYu59"
+                target="_blank"
               ></SocialIcon>
               <SocialIcon
                 style={{ width: "25px", height: "25px" }}
-                url="https://telegram.com"
+                url="https://t.me/+gMeMOpgX311jNGNk"
+                target="_blank"
               ></SocialIcon>
             </div>
           </div>
