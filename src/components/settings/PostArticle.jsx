@@ -40,14 +40,16 @@ function PostArticle() {
   const data = Cookies.get("user_profile");
   const profile = JSON.parse(data);
 
-  const apiLink = "http://127.0.0.1:3001/api/v1/";
+  // const apiLink = "http://127.0.0.1:3001/api/v1/";
+
+  const { VITE_API_URL } = import.meta.env;
 
   useEffect(
     function () {
       async function fetchCategory() {
         try {
           if (token) {
-            const res = await axios.get(`${apiLink}category`, {
+            const res = await axios.get(`${VITE_API_URL}category`, {
               headers: { Authorization: `Bearer ${token}` },
             });
             setCategory(() => res.data.categories);
@@ -58,7 +60,7 @@ function PostArticle() {
       }
       fetchCategory();
     },
-    [token]
+    [token, VITE_API_URL]
   );
 
   function showToast() {
@@ -102,7 +104,7 @@ function PostArticle() {
           `${type === "66b0ec18ac7490f4f7dce39b" ? "Flier" : "Article"}`
         );
 
-        const resp = await axios.post(`${apiLink}forum`, data, {
+        const resp = await axios.post(`${VITE_API_URL}forum`, data, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

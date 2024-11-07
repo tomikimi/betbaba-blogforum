@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import LiveTableFeed from "../components/LiveTableFeed";
 import { Outlet } from "react-router-dom";
 import MostRead from "../components/MostRead";
+
 import "react-loading-skeleton/dist/skeleton.css";
 const goalNewsKey = "1qapi5e2olfk1d8iwkli7kitltfovkd38oj7fyxa";
 
@@ -16,6 +17,7 @@ const goalNewsKey = "1qapi5e2olfk1d8iwkli7kitltfovkd38oj7fyxa";
 function HomePage() {
   const [feeds, setFeeds] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+
   useEffect(function () {
     async function NewsFeed() {
       try {

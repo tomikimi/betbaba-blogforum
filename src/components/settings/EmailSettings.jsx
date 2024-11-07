@@ -41,14 +41,16 @@ function EmailSettings() {
   const data = Cookies.get("user_profile");
   const profile = JSON.parse(data);
 
-  const apiLink = "http://127.0.0.1:3001/api/v1/";
+  const { VITE_API_URL } = import.meta.env;
+
+  // const apiLink = "http://127.0.0.1:3001/api/v1/";
 
   useEffect(
     function () {
       async function fetchCategory() {
         try {
           if (token) {
-            const res = await axios.get(`${apiLink}category`, {
+            const res = await axios.get(`${VITE_API_URL}category`, {
               headers: { Authorization: `Bearer ${token}` },
             });
             setCategory(() => res.data.categories);
@@ -59,7 +61,7 @@ function EmailSettings() {
       }
       fetchCategory();
     },
-    [token]
+    [token, VITE_API_URL]
   );
 
   function showToast() {
@@ -98,7 +100,7 @@ function EmailSettings() {
         data.append("category", type);
         data.append("createdBy", profile._id);
         data.append("photo", photo);
-        const resp = await axios.post(`${apiLink}forum`, data, {
+        const resp = await axios.post(`${VITE_API_URL}forum`, data, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMessage(resp.data);

@@ -11,6 +11,8 @@ import styles from "./emailSettings.module.css";
 
 const toasterInstance = OverlayToaster.create({ position: "bottom-right" });
 
+const { VITE_API_URL } = import.meta.env;
+
 function PasswordSettings() {
   const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -53,9 +55,11 @@ function PasswordSettings() {
       const data = { password: oldPassword, newPassword, confirmPassword };
 
       const res = await axios.patch(
-        "http://127.0.0.1:3001/api/v1/user/updatePassword",
+        `${VITE_API_URL}user/updatePassword`,
         data,
-        { headers: { Authorization: `Bearer ${token}` } }
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
       );
       if (res.data.status === "success") {
         Cookies.remove("user_token");
