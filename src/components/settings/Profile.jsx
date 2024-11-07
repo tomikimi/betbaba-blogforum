@@ -5,6 +5,8 @@ import styles from "./profile.module.css";
 // import forumStyle from "../forum/ForumTopicReplies.module.css";
 // import SideBar from "./SideBar";
 
+const { VITE_API_URL } = import.meta.env;
+
 function Profile() {
   const [displayName, setDisplayName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,7 +15,7 @@ function Profile() {
     function () {
       async function fetchProfile() {
         try {
-          const res = await axios.get("http://127.0.0.1:3001/api/v1/user/me", {
+          const res = await axios.get(`${VITE_API_URL}user/me`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           const { user } = res.data.data;
