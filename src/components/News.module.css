@@ -68,6 +68,21 @@
   }
 }
 
+/* media query from 1240 */
+@media (max-width: 78em) {
+  .news-container {
+    width: 120rem;
+  }
+
+  .news-content-img-box {
+    width: 37rem;
+  }
+
+  .news-skeleton {
+    width: 33.5rem;
+  }
+}
+
 /* media query from 1200 */
 @media (max-width: 76em) {
   .news-container {

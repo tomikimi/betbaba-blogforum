@@ -34,6 +34,17 @@
   }
 }
 
+/* media query from 1240 */
+@media (max-width: 78em) {
+  .feeds-container {
+    width: 120rem;
+  }
+
+  .feeds-board {
+    width: 54.9rem;
+  }
+}
+
 /* media query from 1200 */
 @media (max-width: 79em) {
   .feeds-container {

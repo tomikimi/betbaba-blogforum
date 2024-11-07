@@ -65,6 +65,13 @@
   }
 }
 
+/* media query from 1240 */
+@media (max-width: 78em) {
+  .hero-img-skeleton-box {
+    height: 55vh;
+  }
+}
+
 /* media query from 1200 */
 @media (max-width: 75em) {
   .hero-img-skeleton-box {

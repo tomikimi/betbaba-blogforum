@@ -130,6 +130,13 @@
   }
 }
 
+/* media query from 1240 */
+@media (max-width: 78em) {
+  .footer-container {
+    width: 120rem;
+  }
+}
+
 /* media query from 1270 */
 @media (max-width: 76em) {
   .footer-container {

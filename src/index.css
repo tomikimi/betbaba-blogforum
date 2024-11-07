@@ -181,6 +181,13 @@ body {
   cursor: pointer;
 }
 
+/* media query from 1240 */
+@media (max-width: 78em) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
 @media (max-width: 58em) {
   .content {
     display: flex;
