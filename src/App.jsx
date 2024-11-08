@@ -31,6 +31,7 @@ function App() {
                 element={<ForumTopicReplies></ForumTopicReplies>}
               ></Route>
             </Route>
+
             <Route path="/setting" element={<SettingsPage></SettingsPage>}>
               <Route index element={<Profile></Profile>}></Route>
               <Route
