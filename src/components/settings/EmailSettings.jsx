@@ -41,6 +41,8 @@ function EmailSettings() {
   const data = Cookies.get("user_profile");
   const profile = JSON.parse(data);
 
+  console.log(profile);
+
   const { VITE_API_URL } = import.meta.env;
 
   // const apiLink = "http://127.0.0.1:3001/api/v1/";
@@ -200,22 +202,24 @@ function EmailSettings() {
                 ))}
               </select>
             </div>
-            <div className={styles.formController}>
-              <label htmlFor="image" className={styles.formLabel}>
-                Image
-              </label>
-              <label className="bp5-file-input bp5-fill">
-                <input
-                  type="file"
-                  id="image"
-                  accept="image/*"
-                  onChange={handlePhoto}
-                />
-                <span className="bp5-file-upload-input">
-                  {fileName ? fileName : `Choose file...`}
-                </span>
-              </label>
-            </div>
+            {profile.role !== "user" && (
+              <div className={styles.formController}>
+                <label htmlFor="image" className={styles.formLabel}>
+                  Image
+                </label>
+                <label className="bp5-file-input bp5-fill">
+                  <input
+                    type="file"
+                    id="image"
+                    accept="image/*"
+                    onChange={handlePhoto}
+                  />
+                  <span className="bp5-file-upload-input">
+                    {fileName ? fileName : `Choose file...`}
+                  </span>
+                </label>
+              </div>
+            )}
             <div className={styles.formController}>
               <label htmlFor="content" className={styles.formLabel}>
                 <span className={styles.reqField}>required</span>
