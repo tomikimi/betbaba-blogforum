@@ -35,7 +35,7 @@ function PostArticle() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
-  const [type, setType] = useState("--Select--");
+  const [type, setType] = useState("");
   const token = Cookies.get("user_token");
   const data = Cookies.get("user_profile");
   const profile = JSON.parse(data);
@@ -74,7 +74,9 @@ function PostArticle() {
   }
 
   function handleCategory(e) {
+    // console.log(e.target[0].text);
     setType(e.target.value);
+    // resetType = e.target[0].text;
   }
 
   function handleTitle(e) {
@@ -188,9 +190,10 @@ function PostArticle() {
               <select
                 name="category"
                 className={styles.formInput}
+                value={type}
                 onChange={handleCategory}
               >
-                <option value={type}>--Select--</option>
+                <option value="--Select--">--Select--</option>
                 {category.map((value) => (
                   <option value={value._id} key={value._id}>
                     {value.name}
