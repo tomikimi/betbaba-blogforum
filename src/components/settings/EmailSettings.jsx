@@ -96,16 +96,16 @@ function EmailSettings() {
       setIsLoading(true);
       setError("");
       if (token) {
-        // const data = new FormData();
-        // data.append("title", title);
-        // data.append("content", content);
-        // data.append("category", type);
-        // data.append("createdBy", profile._id);
-        // data.append("photo", photo);
-        // const resp = await axios.post(`${VITE_API_URL}forum`, data, {
-        //   headers: { Authorization: `Bearer ${token}` },
-        // });
-        // setMessage(resp.data);
+        const data = new FormData();
+        data.append("title", title);
+        data.append("content", content);
+        data.append("category", type);
+        data.append("createdBy", profile._id);
+        data.append("photo", photo);
+        const resp = await axios.post(`${VITE_API_URL}forum`, data, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        setMessage(resp.data);
         setTitle("");
         setContent("");
         setPhoto("");
