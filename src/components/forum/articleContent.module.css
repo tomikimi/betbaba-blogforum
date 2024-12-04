@@ -53,6 +53,19 @@
   line-height: 32px;
 }
 
+.article-shareContainer {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.article-shareIcons {
+  display: flex;
+  gap: 1rem;
+}
+
 .article-dateStamp {
   display: inline-block;
   border-radius: 3rem;

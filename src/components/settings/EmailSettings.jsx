@@ -41,7 +41,7 @@ function EmailSettings() {
   const data = Cookies.get("user_profile");
   const profile = JSON.parse(data);
 
-  console.log(profile);
+  // console.log(profile);
 
   const { VITE_API_URL } = import.meta.env;
 
